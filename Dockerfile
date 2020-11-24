@@ -1,4 +1,5 @@
-FROM nginx:mainline-alpine
+FROM klakegg/hugo:alpine-onbuild AS hugo
 
-COPY public /usr/share/nginx/html
+FROM nginx:mainline-alpine
+COPY --from=hugo /target /usr/share/nginx/html
 
