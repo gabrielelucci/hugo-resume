@@ -1,0 +1,256 @@
+# Page settings
+
+baseURL = "https://gabriele.lucci.xyz/"
+languageCode = "en"
+title = "Gabriele Lucci's resume"
+theme = "hugo-devresume-theme"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+author = "Gabriele Lucci"
+description = "Gabriele Lucci's resume - english"
+
+primaryColor = "#B75D69"
+textPrimaryColor = "#292929"
+
+
+[params.profile]
+enable = true
+name = "Gabriele Lucci"
+tagline = "Web developer"
+avatar = "avatar.png"
+
+
+[params.contact]
+enable = true
+
+[[params.contact.list]]
+icon = "fas fa-map-marked-alt"
+url = "geo://41.83909,12.89068"
+text = "Palestrina, RM"
+[[params.contact.list]]
+icon = "fas fa-envelope"
+url = "mailto://gabriele@lucci.xyz"
+text = "gabriele@lucci.xyz"
+[[params.contact.list]]
+icon = "fab fa-github"
+url = "https://github.com/gabrielelucci"
+text = "GitHub: gabrielelucci"
+[[params.contact.list]]
+icon = "fab fa-gitlab"
+url = "https://github.com/gabrielelucci"
+text = "GitLab.com: gabrielelucci"
+[[params.contact.list]]
+icon = "fab fa-telegram"
+url = "https://telegram.me/gabrielelucci"
+text = "Telegram: gabrielelucci"
+
+
+[params.skills]
+enable = true
+
+[[params.skills.list]]
+title = "Programming"
+[[params.skills.list.items]]
+details = "Python"
+[[params.skills.list.items]]
+details = "Javascript/Node.js"
+[[params.skills.list.items]]
+details = "Java/Android"
+
+[[params.skills.list]]
+title = "Web development"
+[[params.skills.list.items]]
+details = "Django / Flask"
+[[params.skills.list.items]]
+details = "Loopback v3"
+[[params.skills.list.items]]
+details = "uwsgi"
+[[params.skills.list.items]]
+details = "RDF / SPARQL"
+[[params.skills.list.items]]
+details = "Apache Solr / Elasticsearch"
+[[params.skills.list.items]]
+details = "Redis"
+[[params.skills.list.items]]
+details = "PostgreSQL / PostGIS"
+
+
+[[params.skills.list]]
+title = "Tooling"
+[[params.skills.list.items]]
+details = "Git"
+[[params.skills.list.items]]
+details = "GitLab (CI/CD) / GitHub"
+[[params.skills.list.items]]
+details = "Docker / docker-compose"
+[[params.skills.list.items]]
+details = "pandas / numpy"
+[[params.skills.list.items]]
+details = "IntelliJ/PyCharm"
+
+[[params.skills.list]]
+title = "Misc."
+[[params.skills.list.items]]
+details = "GNU/Linux"
+[[params.skills.list.items]]
+details = "Nginx / Caddy"
+[[params.skills.list.items]]
+details = "Rancher"
+
+
+# [params.education]
+# enable = true
+#
+# [[params.education.list]]
+# degree = "MSc in Computer Science"
+# university = "University College London"
+# dates = "2010 - 2011"
+# [[params.education.list]]
+# degree = "BSc Maths and Physics"
+# university = "Imperial College London"
+# dates = "2007 - 2010"
+
+
+# [params.awards]
+# enable = true
+#
+# [[params.awards.list]]
+# name = "Award Lorem Ipsum"
+# body = "Microsoft lorem ipsum"
+# date = "2019"
+# [[params.awards.list]]
+# name = "Award Donec Sodales"
+# body = "Oracle Aenean"
+# date = "2017"
+
+
+[params.languages]
+enable = true
+
+[[params.languages.list]]
+name = "Italian"
+level = "Native"
+[[params.languages.list]]
+name = "English"
+level = "C1"
+[[params.languages.list]]
+name = "Chinese"
+level = "A1"
+
+
+[params.interests]
+enable = true
+[[params.interests.list]]
+name = "Music"
+[[params.interests.list]]
+name = "Videogames"
+[[params.interests.list]]
+name = "Cooking"
+[[params.interests.list]]
+name = "Inline skating"
+
+
+[params.summary]
+enable = true
+text = """
+I'm a versatile and perfectionist software developer, with professional experience in __Python__ and __Javascript/Node.js__, specifically in backend-side web developing. I consider myself a fast learner, and I'm always looking for something new to tinker with.
+
+I love Django (who doesn't?), Linux (my favourite distribution is Arch Linux), gaming (on Linux, of course), music (I also play bass guitar), discussing about politics (only if provoked though), collecting records (mainly italian CDs), and simple but effective designs (e.g. ATAC ticket vending machines).
+"""
+
+
+[params.experience]
+enable = true
+
+[[params.experience.list]]
+title = "Backend developer"
+dates = "07/07/2017 – in corso"
+company = "DEPP / GSSI / Openpolis"
+details = """
+Employed by DEPP first, and by the Gran Sasso Science Institute then, I worked for the [Openpolis foundation](https://www.openpolis.it/), developing various web applications and toolkits using Django and Python.
+
+Those are the most relevant projects I worked on, with a link to the git-forge repository if available:
+
+  - __[op-povedu](https://gitlab.depp.it/openpolis/op-pov-edu)__ - _"Povertà Educativa"_: a Django application which gathers socio-economic data about education and minors in Italy, organizing everything into a strucutred database (queryable via Metabase) and handy CSVs. This data is then analyzed and used to produce [articles and media](https://www.openpolis.it/poverta-educativa/). I've been the lead developer since the beginning. I made extensive use of _[pandas](https://pandas.pydata.org/)_ (which I love, by the way) to transform and aggregate data.
+
+  - __[opdm-service](https://gitlab.depp.it/openpolis/opdm/opdm-service/)__ - _["La Mappa del Potere"](https://service.opdm.openpolis.io)_: currently Openpolis most important project, a service which gathers, organizes and serves data about political power in Italy. I co-designed and implemented parts of the REST API (using [django-rest-framework](https://www.django-rest-framework.org)), and developed a lot of data import tasks, often using _SPARQL_ to query relevant stuff from RDF structures.
+  
+  - __[django-popolo](https://github.com/openpolis/django-popolo)__: a Django app which implements [Popolo](https://www.popoloproject.com/), a set of open government data specifications. This is a core part of opdm-service, implementing the data structure.
+
+  - __[django-uwsgi-taskmanager](https://github.com/openpolis/django-uwsgi-taskmanager)__: a Django app to manage async tasks via the admin interface, using the uWSGI spooler. This is also a core part of opdm-service, used to run and schedule tasks such as importing new data and keeping existing data up-to-date. 
+
+  - __[opdm-etl](https://gitlab.depp.it/openpolis/opdm/opdm-etl)__: a Python micro-framework which abstracts __ETL__ pipelines.
+
+  - __[op-politiche-2018](https://gitlab.depp.it/openpolis/politiche-2018)__ - _["A schede scoperte"](https://www.openpolis.it/a-schede-scoperte/)"_: an application which, provided an address, gives you the names of the candidates on the voting paper for the 2018 Italian general election, while also telling you their poltical career and economic interests (e.g their roles in companies). I worked on the backend, developing the REST API with _django-rest-framework_.
+
+"""
+
+[[params.experience.list]]
+title = "\"Full\" stack developer"
+dates = "09/2016 – 07/07/2017"
+company = "Anansi Team"
+details = """
+I was the lead (and basically the only) developer of "APA Cloud", a suite of server side applications that gather, store and visualize air quality sensor data. Mainly developed using Node.js ([LoopBack 3](https://loopback.io/) and [Sails.js](Sails.js)) for the backend, and Angular v1 for the frontend stuff.
+
+"""
+
+
+[params.projects]
+enable = true
+
+[[params.projects.list]]
+title = "LucciCloud"
+meta = " My own self-hosted cloud infrastructure"
+tagline = """
+
+I mantain a number of self-hosted services, running on a couple of rented VPS.
+
+Some of the services I run:
+ - this very web site
+ - a Nextcloud server, which I use daily to backup my photos, store documents and sync contacts and calenders between my devices.
+ - a Mastodon node
+ - a Minecraft server
+
+Everything is deployed [using docker-compose]() on Docker hosts running [Clear Linux*](https://clearlinux.org/), my go-to Linux server distribution.
+
+In the end, I'm quite proud of this project. I learnt and I'm still learning a lot from it, while provides me a bunch of useful services and a safe place for my data.
+
+"""
+
+
+# [params.information]
+# enable = true
+#
+# [[params.information.list]]
+# title = "Papers"
+# [[params.information.list.items]]
+# details = "2018 · Lorem Ipsum"
+# [[params.information.list.items]]
+# details = "2016 · Sed Fringilla"
+# [[params.information.list]]
+# title = "Interests"
+# details = "Climbing, Snowboarding, Photography, Travelling"
+
+
+[params.social]
+enable = true
+
+[[params.social.list]]
+icon = "fab fa-mastodon"
+url = "https://social.lucci.xyz/gabriele"
+title = "@gabriele"
+[[params.social.list]]
+icon = "fab fa-twitter"
+url = "https://twitter.com/gabriele_lucci_"
+title = "@gabriele_lucci_"
+[[params.social.list]]
+icon = "fab fa-spotify"
+url = "https://open.spotify.com/user/gabrielelucci"
+title = "gabrielelucci"
+
+[params.footer]
+enable = true
+copyright = "Gabriele Lucci"
+
