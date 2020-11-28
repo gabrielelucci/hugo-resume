@@ -239,7 +239,7 @@ enable = true
 
 [[params.social.list]]
 icon = "fab fa-mastodon"
-url = "https://social.lucci.xyz/gabriele"
+url = "https://mastodon.lucci.xyz/@gabriele"
 title = "@gabriele"
 [[params.social.list]]
 icon = "fab fa-twitter"
