@@ -166,8 +166,8 @@ enable = true
 
 [[params.experience.list]]
 title = "Backend developer"
-dates = "07/07/2017 – in corso"
-company = "DEPP / GSSI / Openpolis"
+dates = "07/07/2017 – 31/01/2021"
+company = "GSSI / Openpolis"
 details = """
 Employed by DEPP first, and by the Gran Sasso Science Institute then, I worked for the [Openpolis foundation](https://www.openpolis.it/), developing various web applications and toolkits using Django and Python.
 
@@ -209,13 +209,13 @@ I mantain a number of self-hosted services, running on a couple of rented VPS.
 
 Some of the services I run:
  - this very web site
- - a Nextcloud server, which I use daily to backup my photos, store documents and sync contacts and calenders between my devices.
+ - a Nextcloud server, which I use daily to backup my photos, store documents and sync contacts and calendars between my personal devices.
  - a Mastodon node
  - a Minecraft server
 
 Everything is deployed [using docker-compose]() on Docker hosts running [Clear Linux*](https://clearlinux.org/), my go-to Linux server distribution.
 
-In the end, I'm quite proud of this project. I learnt and I'm still learning a lot from it, while provides me a bunch of useful services and a safe place for my data.
+In the end, I'm quite proud of this project. I'm learning a lot from it, while it provides me with a safe place for my data and a bunch of useful services.
 
 """
 
