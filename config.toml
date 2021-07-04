@@ -165,6 +165,15 @@ I love Django (who doesn't?), Linux (my favourite distribution is Arch Linux), g
 enable = true
 
 [[params.experience.list]]
+title = "Full stack developer"
+dates = "17/05/2021 - now"
+company = "Eurac Research"
+details = """
+I'm part of the IT team at the [Intitute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) of [Eurac Research](https://www.eurac.edu), currently working on the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project.
+
+"""
+
+[[params.experience.list]]
 title = "Backend developer"
 dates = "07/07/2017 – 31/01/2021"
 company = "GSSI / Openpolis"
