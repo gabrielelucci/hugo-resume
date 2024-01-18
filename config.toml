@@ -64,17 +64,15 @@ title = "Web development"
 [[params.skills.list.items]]
 details = "Django / Flask"
 [[params.skills.list.items]]
-details = "Loopback v3"
+details = "Scraping / ETL (RDF, SPARQL)"
 [[params.skills.list.items]]
-details = "uwsgi"
+details = "Full Text-search (Solr/Elasticsearch)"
 [[params.skills.list.items]]
-details = "RDF / SPARQL"
+details = "(PostgreSQL, PostGIS)"
 [[params.skills.list.items]]
-details = "Apache Solr / Elasticsearch"
+details = "Data modeling"
 [[params.skills.list.items]]
-details = "Redis"
-[[params.skills.list.items]]
-details = "PostgreSQL / PostGIS"
+details = "HTTP API design"
 
 
 [[params.skills.list]]
@@ -84,18 +82,18 @@ details = "Git"
 [[params.skills.list.items]]
 details = "GitLab (CI/CD) / GitHub"
 [[params.skills.list.items]]
-details = "Docker / docker-compose"
+details = "Docker / Podman"
 [[params.skills.list.items]]
-details = "pandas / numpy"
+details = "mypy / pandas"
 [[params.skills.list.items]]
-details = "IntelliJ/PyCharm"
+details = "PyCharm / VSCode"
 
 [[params.skills.list]]
 title = "Misc."
 [[params.skills.list.items]]
 details = "GNU/Linux"
 [[params.skills.list.items]]
-details = "Nginx / Caddy"
+details = "nginx / Caddy"
 [[params.skills.list.items]]
 details = "Rancher"
 
@@ -155,9 +153,9 @@ name = "Inline skating"
 [params.summary]
 enable = true
 text = """
-I'm a versatile and perfectionist software developer, with professional experience in __Python__ and __Javascript/Node.js__, specifically in backend-side web developing. I consider myself a fast learner, and I'm always looking for something new to tinker with.
+I'm a software developer, with professional experience in __Python__ and __Javascript/Node.js__, specifically in backend-side web developing. I'm a detail-oriented perfectionist, but I'm also versatile and a fast learner, always seeking new challenges.
 
-I love Django (who doesn't?), Linux (my favourite distribution is Arch Linux), gaming (on Linux, of course), music (I also play bass guitar), discussing about politics (only if provoked though), collecting records (mainly italian CDs), and simple but effective designs (e.g. ATAC ticket vending machines).
+I love Django (who doesn't?), Linux (I use Arch Linux, by the way), gaming (on Linux, of course), music (sometimes also play bass guitar), discussing about politics (only if provoked though), collecting records (mainly italian CDs), and simple but effective designs (e.g. ATAC ticket vending machines).
 """
 
 
@@ -166,10 +164,12 @@ enable = true
 
 [[params.experience.list]]
 title = "Full stack developer"
-dates = "17/05/2021 - now"
-company = "Eurac Research"
+dates = "17/05/2021 - 31/12/2023"
+company = "Eurac Research  - Institute of Biomedicine"
 details = """
-I'm part of the IT team at the [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) of [Eurac Research](https://www.eurac.edu), currently working on the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project.
+I was part of the IT team at the [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) of [Eurac Research](https://www.eurac.edu), and I worked on the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project, for which I developed the "dynamic data portal", a website that allows researchers (even of external insitutions too) to browse a set of the data gathered by Eurac's Institue of Biomedicine. The portal also enables researchers to request data by filing an application, and also handles the approval workflow of the application by the IfB staff.
+
+Due to the small size of our development team, we decided to build the portal as a full-stack Django application. This also included an HTTP API for complementary CLI tools. I played a significant role in the project's architecture and implementation, and I am very happy with the final result!
 
 """
 
@@ -185,10 +185,10 @@ Those are the most relevant projects I worked on, with a link to the git-forge r
   - __[op-povedu](https://gitlab.depp.it/openpolis/op-pov-edu)__ - _"Povertà Educativa"_: a Django application which gathers socio-economic data about education and minors in Italy, organizing everything into a strucutred database (queryable via Metabase) and handy CSVs. This data is then analyzed and used to produce [articles and media](https://www.openpolis.it/poverta-educativa/). I've been the lead developer since the beginning. I made extensive use of _[pandas](https://pandas.pydata.org/)_ (which I love, by the way) to transform and aggregate data.
 
   - __[opdm-service](https://gitlab.depp.it/openpolis/opdm/opdm-service/)__ - _["La Mappa del Potere"](https://service.opdm.openpolis.io)_: currently Openpolis most important project, a service which gathers, organizes and serves data about political power in Italy. I co-designed and implemented parts of the REST API (using [django-rest-framework](https://www.django-rest-framework.org)), and developed a lot of data import tasks, often using _SPARQL_ to query relevant stuff from RDF structures.
-  
+
   - __[django-popolo](https://github.com/openpolis/django-popolo)__: a Django app which implements [Popolo](https://www.popoloproject.com/), a set of open government data specifications. This is a core part of opdm-service, implementing the data structure.
 
-  - __[django-uwsgi-taskmanager](https://github.com/openpolis/django-uwsgi-taskmanager)__: a Django app to manage async tasks via the admin interface, using the uWSGI spooler. This is also a core part of opdm-service, used to run and schedule tasks such as importing new data and keeping existing data up-to-date. 
+  - __[django-uwsgi-taskmanager](https://github.com/openpolis/django-uwsgi-taskmanager)__: a Django app to manage async tasks via the admin interface, using the uWSGI spooler. This is also a core part of opdm-service, used to run and schedule tasks such as importing new data and keeping existing data up-to-date.
 
   - __[opdm-etl](https://gitlab.depp.it/openpolis/opdm/opdm-etl)__: a Python micro-framework which abstracts __ETL__ pipelines.
 
@@ -214,15 +214,16 @@ title = "LucciCloud"
 meta = " My own self-hosted cloud infrastructure"
 tagline = """
 
-I mantain a number of self-hosted services, running on a couple of rented VPS.
+Since I love working with containers and administering systems, on my free time I mantain an array of self-hosted services, running on a couple of rented servers.
 
 Some of the services I run:
  - this very web site
  - a Nextcloud server, which I use daily to backup my photos, store documents and sync contacts and calendars between my personal devices.
- - a Mastodon node
- - a Minecraft server
+ - [Grocy](https://grocy.info/), an ERP for managing groceries and alike.
+ - a bunch of [Fediverse](https://en.wikipedia.org/wiki/Fediverse) nodes ([Mastodon](https://joinmastodon.org/it), [GoToSocial](https://gotosocial.org/))
+ - a Minecraft server, because... why not?
 
-Everything is deployed [using docker-compose]() on Docker hosts running [Clear Linux*](https://clearlinux.org/), my go-to Linux server distribution.
+Everything is deployed [using docker-compose]() on a Linux hosts.
 
 In the end, I'm quite proud of this project. I'm learning a lot from it, while it provides me with a safe place for my data and a bunch of useful services.
 
@@ -250,10 +251,6 @@ enable = true
 icon = "fab fa-mastodon"
 url = "https://mastodon.lucci.xyz/@gabriele"
 title = "@gabriele"
-[[params.social.list]]
-icon = "fab fa-twitter"
-url = "https://twitter.com/gabriele_lucci_"
-title = "@gabriele_lucci_"
 [[params.social.list]]
 icon = "fab fa-spotify"
 url = "https://open.spotify.com/user/gabrielelucci"
