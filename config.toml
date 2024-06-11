@@ -139,10 +139,9 @@ name = "Inline skating"
 [params.summary]
 enable = true
 text = """
-Hi there! I'm a software developer with professional experience __Python__ and __Javascript/Node.js__, mostly on the backend side of web development. I'm a detail-oriented perfectionist, but also versatile and always looking for new challenges. I love working with Django (who doesn't?), but I'm always open to learning new technologies. I've been using __Linux__ since I was 14 (I use Arch Linux by the way) and I like to tinker with containers.
+Hi there! I’m a software developer with professional experience in Python and JavaScript/Node.js, mostly on the backend side of web development. I’m a detail-oriented perfectionist, but also versatile and always looking for new challenges. I love working with Django (who doesn’t?), but I’m always open to learning new technologies. I’ve been using Linux since I was a kid (I use Arch Linux, by the way) and I like to tinker with containers.
 
-In my spare time, I like engaging in various music-related activities, such as going to concerts, clubbing, and playing bass guitar with my band. I also enjoy playing videogames (on Linux, of course), board games with friends, and inline skating.
-"""
+In my spare time, I like engaging in various music-related activities, such as going to concerts, clubbing, and playing bass guitar with my band. I also enjoy playing video games (on Linux, of course), board games with friends, and inline skating."""
 
 [params.experience]
 enable = true
@@ -152,7 +151,7 @@ title = "Technician / Full stack developer"
 dates = "17/05/2021 - 31/12/2023"
 company = "Eurac Research (Institute of Biomedicine)"
 details = """
-I was part of the IT team at the [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) of [Eurac Research](https://www.eurac.edu), and I worked mainly on the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project, for which I developed the "dynamic data portal", a website that allows researchers (even of external insitutions too) to browse a set of the data gathered by Eurac's IfB studies. The portal enables researchers to request data by filing a detailed application with the desired set of variables, and also handles the approval workflow of the application by the IfB staff.
+I was part of the IT team at the [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) of [Eurac Research](https://www.eurac.edu), and I worked mainly on the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project, for which I developed the "dynamic data portal", a website that allows researchers (even of external institutions too) to browse a set of the data gathered by Eurac's IfB studies. The portal enables researchers to request data by filing a detailed application with the desired set of variables, and also handles the approval workflow of the application by the IfB staff.
 
 Due to the small size of our development team, we decided to build the portal as a full-stack Django application. This also included an HTTP API for complementary CLI tools. I played a significant role in deciding the project's architecture and implementation, and I am very happy with the final result!
 
@@ -198,7 +197,7 @@ title = "LucciCloud"
 meta = " My own self-hosted cloud infrastructure"
 tagline = """
 
-Since I enjoy working with containers and administering systems, on my free time I mantain an array of self-hosted services, hosted on a couple of rented servers.
+Since I enjoy working with containers and administering systems, on my free time I mantain an array of services, hosted on a couple of rented servers.
 
 Some of the services I run:
  - a [Nextcloud](https://nextcloud.com) server, which I use daily to backup my photos, store documents and sync contacts and calendars between my personal devices.
