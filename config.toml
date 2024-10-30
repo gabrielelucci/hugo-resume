@@ -49,9 +49,9 @@ title = "Programming"
 [[params.skills.list.items]]
 details = "Python"
 [[params.skills.list.items]]
-details = "Javascript/Node.js"
+details = "Javascript / Node.js"
 [[params.skills.list.items]]
-details = "Java/Android"
+details = "Java / Android"
 
 [[params.skills.list]]
 title = "Web development"
@@ -130,6 +130,8 @@ enable = true
 [[params.interests.list]]
 name = "Music"
 [[params.interests.list]]
+name = "Coffee"
+[[params.interests.list]]
 name = "Videogames"
 [[params.interests.list]]
 name = "Cooking"
@@ -139,9 +141,10 @@ name = "Inline skating"
 [params.summary]
 enable = true
 text = """
-Hi there! I’m a software developer with professional experience in Python and JavaScript/Node.js, mostly on the backend side of web development. I’m a detail-oriented perfectionist, but also versatile and always looking for new challenges. I love working with Django (who doesn’t?), but I’m always open to learning new technologies. I’ve been using Linux since I was a kid (I use Arch Linux, by the way) and I like to tinker with containers.
+Hi there! I'm a software developer with professional experience in Python and JavaScript/Node.js, and mostly on the backend side of web development. I'm a detail-oriented perfectionist, but also versatile and constantly looking for new challenges. I love working with Django (who doesn't?), but I'm always open to learning new technologies. Additionally, I'm quite proficient with Linux, that I've been using in some form or another since I was a kid (I use Arch Linux, by the way), and I have solid experience in system administration and with container runtimes (Docker, Podman).
 
-In my spare time, I like engaging in various music-related activities, such as going to concerts, clubbing, and playing bass guitar with my band. I also enjoy playing video games (on Linux, of course), board games with friends, and inline skating."""
+In my spare time, I like engaging in various music-related activities, such as going to concerts, clubbing, and playing bass guitar with my band. I also enjoy playing video games (on Linux, of course), board games with friends, and inline skating. Oh, and I'm a huge coffee nerd too!
+"""
 
 [params.experience]
 enable = true
@@ -162,7 +165,7 @@ title = "Backend developer"
 dates = "07/07/2017 – 31/01/2021"
 company = "DEPP / GSSI / Openpolis"
 details = """
-Employed by DEPP first, and by the Gran Sasso Science Institute then, I worked for the [Openpolis foundation](https://www.openpolis.it/), developing various web applications and toolkits using Django and Python.
+I worked for the [Openpolis foundation](https://www.openpolis.it/), developing multiple web applications and toolkits using Django and Python.
 
 Those are the most relevant projects I worked on, with a link to the git-forge repository if available:
 
@@ -185,7 +188,7 @@ title = "\"Full\" stack developer"
 dates = "09/2016 – 07/07/2017"
 company = "Anansi Team"
 details = """
-I was the lead (and basically the only) developer of "APA Cloud", a suite of server side applications that gather, store and visualize air quality sensor data. Mainly developed using Node.js ([LoopBack 3](https://loopback.io/) and [Sails.js](Sails.js)) for the backend, and Angular v1 for the frontend stuff.
+I was the lead (and basically the only) developer of "APA Cloud", a suite of server side applications that gather, store and visualize air quality sensor data. Mainly developed using Node.js ([LoopBack 3](https://loopback.io/) and [Sails.js](https://sailsjs.com/)) for the backend, and Angular v1 for the frontend stuff.
 
 """
 
@@ -196,19 +199,18 @@ enable = true
 title = "LucciCloud"
 meta = " My own self-hosted cloud infrastructure"
 tagline = """
-
-Since I enjoy working with containers and administering systems, on my free time I mantain an array of services, hosted on a couple of rented servers.
+Since I enjoy working with containers and administering systems, in my spare time I maintain an array of services, hosted on a couple of rented servers.
 
 Some of the services I run:
- - a [Nextcloud](https://nextcloud.com) server, which I use daily to backup my photos, store documents and sync contacts and calendars between my personal devices.
- - [Grocy](https://grocy.info/), an ERP for managing groceries and alike.
  - a bunch of [Fediverse](https://en.wikipedia.org/wiki/Fediverse) nodes ([Mastodon](https://joinmastodon.org/it), [GoToSocial](https://gotosocial.org/))
- - a Minecraft server, because… why not?
+ - a [Nextcloud](https://nextcloud.com) server, which I use daily to back up my photos, store documents and sync contacts and calendars between my personal devices.
+ - [Grocy](https://grocy.info/), an ERP for managing groceries and alike.
+ - a Minecraft server because… why not?
   - this very website!
 
-Everything is deployed [using docker-compose](https://gitlab.com/gabrielelucci/cloud) on a Linux hosts.
-
-In the end, I'm quite proud of this project. I'm learning a lot from it, while it provides me with a safe place for my data and a bunch of useful services.
+Everything is deployed [using docker-compose](https://gitlab.com/gabrielelucci/cloud) on a 
+Linux hosts.
+I'm quite proud of this project, and I've learned a lot from it!
 
 """
 
