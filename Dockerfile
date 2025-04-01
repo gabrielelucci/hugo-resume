@@ -1,5 +1,8 @@
-FROM docker.io/klakegg/hugo:ext-alpine-onbuild AS hugo
+FROM  ghcr.io/hugomods/hugo:exts-non-root AS builder
+
+COPY . /src
+RUN hugo --minify --gc
 
 FROM docker.io/library/nginx:mainline-alpine-slim
-COPY --from=hugo /target /usr/share/nginx/html
+COPY --from=builder /src/public /usr/share/nginx/html
 
