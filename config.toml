@@ -53,6 +53,8 @@ title = "Programming"
 [[params.skills.list.items]]
 details = "Python"
 [[params.skills.list.items]]
+details = "Golang"
+[[params.skills.list.items]]
 details = "Javascript / Node.js"
 [[params.skills.list.items]]
 details = "Java / Android"
@@ -62,35 +64,41 @@ title = "Web development"
 [[params.skills.list.items]]
 details = "Django / Flask"
 [[params.skills.list.items]]
-details = "Scraping / ETL"
-[[params.skills.list.items]]
-details = "Full Text-search"
+details = "SQL (Postgres, SQLite)"
 [[params.skills.list.items]]
 details = "Data modeling"
 [[params.skills.list.items]]
 details = "HTTP API design"
+[[params.skills.list.items]]
+details = "Containerization"
+[[params.skills.list.items]]
+details = "Full Text-search"
+[[params.skills.list.items]]
+details = "Scraping / ETL"
 
 [[params.skills.list]]
 title = "Tooling"
 [[params.skills.list.items]]
-details = "Git"
+details = "Version control (Git)"
 [[params.skills.list.items]]
-details = "GitLab (CI/CD) / GitHub"
+details = "Repository management (GitLab, GitHub, Bitbucket)"
 [[params.skills.list.items]]
-details = "Docker / Podman"
+details = "OCI Containers (Docker, Podman)"
 [[params.skills.list.items]]
-details = "mypy / pandas"
+details = "Python (mypy, ruff, uv)"
 [[params.skills.list.items]]
-details = "PyCharm / VSCode"
+details = "IDE (PyCharm, VSCode)"
 
 [[params.skills.list]]
-title = "Sysadmin"
+title = "SysAdmin"
 [[params.skills.list.items]]
-details = "Linux"
+details = "Linux (Debian, RedHat, Arch)"
 [[params.skills.list.items]]
-details = "nginx / Caddy"
+details = "Web servers (Nginx, Caddy, Apache)"
 [[params.skills.list.items]]
-details = "Kubernetes / Rancher"
+details = "Container orchestration (Compose, Kubernetes)"
+[[params.skills.list.items]]
+details = "Monitoring (Prometheus, Grafana)"
 
 [params.education]
 enable = true
@@ -101,6 +109,7 @@ iscedCode = "3"
 university = "IISS J. Von Neumann"
 city = "Rome"
 dates = "2009 - 2016"
+
 # [[params.education.list]]
 # degree = "BSc Maths and Physics"
 # university = "Imperial College London"
@@ -126,10 +135,10 @@ name = "Italiano"
 level = "Native"
 [[params.languages.list]]
 name = "English"
-level = "C1"
+level = "C1 - Proficient"
 [[params.languages.list]]
 name = "汉语"
-level = "A1"
+level = "A1 - Beginner"
 
 [params.interests]
 enable = true
@@ -138,56 +147,56 @@ name = "Music"
 [[params.interests.list]]
 name = "Coffee"
 [[params.interests.list]]
-name = "Videogames"
-[[params.interests.list]]
 name = "Cooking"
+[[params.interests.list]]
+name = "Videogames"
 [[params.interests.list]]
 name = "Inline skating"
 
 [params.summary]
 enable = true
 text = """
-Hi there! I'm a software developer with professional experience in __Python__ and __JavaScript/Node.js__, and mostly on the backend side of web development. I'm a detail-oriented perfectionist, but also versatile and constantly looking for new challenges. I love working with __Django__ (who doesn't?), but I'm always open to learning new technologies. Additionally, I'm quite proficient in administering __Linux__ systems, which I've been using in some form or another since I was a kid.
+I'm a software developer with professional experience in __Python__ and __JavaScript/Node.js__, particularly on the backend side of web development, with a proven track record on delivering cloud-native solutions from the drawing board to production.
 
-In my spare time, I especially enjoy engaging in various music-related activities, such as going to concerts, clubbing, and playing bass guitar with [my friends](https://www.instagram.com/lefogliemusic/). I also enjoy playing video games (on Linux, of course), board games with friends, and inline skating. Oh, and I'm quite a big coffee enthusiast, too!"""
+I'm a detail-oriented perfectionist, but also versatile and constantly looking for new challenges. I enjoy working with __Django__ (who doesn't? ), but I'm always open to learning new technologies. Additionally, I'm quite proficient in administering __Linux__ systems, which I've been using in some form or another since I was a kid.
+
+In my spare time, I especially enjoy engaging in various music-related activities, such as playing bass guitar with [my friends](https://www.instagram.com/lefogliemusic/).
+"""
 
 [params.experience]
 enable = true
 
 [[params.experience.list]]
 title = "Technician / Full stack developer"
-dates = "17/05/2021 - 31/12/2023"
+dates = "May 2021 - Dec 2023"
 company = "Eurac Research (Institute of Biomedicine)"
 details = """
-I was part of the IT team at the [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) of Eurac Research. Assigned to the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project, I worked on the creation of a “dynamic data portal”, a web app that allows researchers, even from outside institutions, to peruse a set of the data gathered by Eurac's IfB studies.
+As part of the IT team at the [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) of Eurac Research, I worked primarily on the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project, which involved the creation of a “dynamic data portal”, a web app enabling researchers, even from outside institutions, to peruse a set of the data gathered by Eurac's IfB studies.
 
-Due to the small size of our development team, we decided to build the portal as a full-stack __Django__ application. This also included an HTTP API for complementary CLI tools. I played a significant role in deciding the project's architecture and implementation, and I am pleased with what was achieved.
-
+Due to the small size of our development team, we decided to build the portal as a full-stack __Django__ application, that included an HTTP API to be queried by complementary internal tools. I played a significant role in deciding the project's architecture and implementation;  it's been a real benchmark of my skills that was ultimately a success, and I'm quite proud of what was achieved.
 """
 
 [[params.experience.list]]
 title = "Backend developer"
-dates = "07/07/2017 - 31/01/2021"
+dates = "Jul 2017 - Jan 2021"
 company = "Fondazione Openpolis"
 details = """
 I worked for the [Openpolis Foundation](https://www.openpolis.it/), supporting their editorial team by developing multiple web applications and toolkits using __Python__ and __Django__.
 
-Those are the most relevant projects I worked on:
-  - __[opdm-service](https://gitlab.depp.it/openpolis/opdm/opdm-service/)__ - _["La Mappa del Potere"](https://service.opdm.openpolis.io)_: one of Openpolis' most important projects, a service which gathers, organizes and serves data about political power in Italy. I helped designing and implementing parts of the REST API (using __Django REST framework__), and developed many data import scripts, often using tools such as __SPARQL__ to query relevant stuff from RDF structures.
-  - __[django-popolo](https://github.com/openpolis/django-popolo)__: a __Django__ implementation of [Popolo](https://www.popoloproject.com/), which is a set of open government data specifications. This is a core part of opdm-service, defining the main data structure and more.
-  - __[django-uwsgi-taskmanager](https://github.com/openpolis/django-uwsgi-taskmanager)__: a __Django__ app to manage asynchronous tasks via the admin interface, using the __uWSGI__ spooler as a task queue. This is also a core part of opdm-service and other web apps I helped develop, often used to run and schedule tasks such as import pipelines, syncing with external sources, etc.
-  - __[opdm-etl](https://gitlab.depp.it/openpolis/opdm/opdm-etl)__: a __Python__ micro-framework to implement __ETL__ pipelines.
-  - __[op-povedu](https://gitlab.depp.it/openpolis/op-pov-edu)__ - _"Povertà Educativa"_: a __Django__ application which gathers socio-economic data about education and minors in Italy, organizing everything into a structured database (queryable via Metabase) and handy CSVs. This data is then analyzed and used to produce [articles and media](https://www.openpolis.it/poverta-educativa/). I've been the lead developer since the beginning. I made extensive use of [__pandas__](https://pandas.pydata.org/) to transform and aggregate data.
-  - __[op-politiche-2018](https://gitlab.depp.it/openpolis/politiche-2018)__ - _["A schede scoperte"](https://www.openpolis.it/a-schede-scoperte/)_: an application which, provided an address, would give the user the names of the candidates on the voting paper for the 2018 Italian general election in their electoral college. It would also inform the user about the candidate's political political career and economic interests (e.g. their roles in companies). I worked on the app backend, developing the REST API with __Django REST framework__.
+Those are the most relevant projects I was involed in:
+- "[Mappe del potere](https://fondazione.openpolis.it/en/cosa-facciamo/mappe-del-potere)": essentially a database of all things related to Italian politicians, modeled following the [Popolo](https://www.popoloproject.com/) open specification. It essentially consists of a core implemented as an open-source [Django app](https://github.com/openpolis/django-popolo), a complex *REST API* that exposes the underlying data, and a [custom-built task manager](https://github.com/openpolis/django-uwsgi-taskmanager) to handle and scheduling background tasks. The data was gathered from numerous different sources (HTTP APIs, *SPARQL*, *web scraping*) by ETL pipelines.
+- "[Povertà educativa](https://www.openpolis.it/poverta-educativa/)": a project that shares a lot of components and concepts with the previously listed one, but with a particular focus on the socio-economic conditions of minors in Italy.
+- "[A schede scoperte](https://www.openpolis.it/schede-scoperte-politiche-2018/)": an application implemented in Django and **React**, with the purpose of promoting transparency during the 2018 Italian general elections.
 
+This was a pivotal role for my career, as I was lucky enough to have an expert mentor who taught me a lot of extremely valuable skills that I consider fundamental to my profile.
 """
 
 [[params.experience.list]]
 title = "Full stack developer"
-dates = "01/09/2016 - 07/07/2017"
+dates = "Sep 2016 - Jul 2017"
 company = "Anansi Team"
 details = """
-I was the lead (and basically the only) developer of "APA Cloud", a suite of server side applications that would gather, store, and visualize air quality sensor data. Mainly developed using __Node.js__ ([LoopBack 3](https://loopback.io/) and [Sails.js](https://sailsjs.com/)) for the backend, and __Angular v1__ for the frontend stuff.
+I was the lead developer of "APA Cloud", a suite of server side applications that would gather, store, and visualize air quality sensor data. Mainly developed using __Node.js__ ([LoopBack 3](https://loopback.io/) and [Sails.js](https://sailsjs.com/)) for the backend, and __Angular v1__ for the frontend.
 
 """
 
@@ -198,20 +207,30 @@ enable = true
 title = "My own self-hosted \"cloud\""
 meta = "a.k.a. \"LucciCloud\""
 tagline = """
-I've been mantaining an array of self-hosted services for years.
+I've been maintaining an array of self-hosted services for years.
 
 Some of the services I run (there are more, but these are the most relevant):
- - a bunch of [Fediverse](https://en.wikipedia.org/wiki/Fediverse) nodes ([Mastodon](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/))
- - a [Nextcloud](https://nextcloud.com) server, which I use daily to back up my photos, store documents and sync contacts and calendars between my personal devices.
+ - a bunch of [Fediverse](https://en.wikipedia.org/wiki/Fediverse) nodes ([**Mastodon**](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/))
+ - a [**Nextcloud**](https://nextcloud.com) server, which I use daily to back up my photos, store documents and sync contacts and calendars between my personal devices.
  - [Grocy](https://grocy.info/), an ERP for managing groceries and alike.
  - a Minecraft game server because… why not?
-  - [this very website](https://gitlab.com/gabrielelucci/www)!
+  - [this very website](https://gitlab.com/gabrielelucci/hugo-resume) (made with [**Hugo**](https://gohugo.io/))!
 
-Everything is deployed [using containers](https://gitlab.com/gabrielelucci/cloud) on rented Linux hosts.
-I'm very proud of this project, I've learned a lot from it!
+Everything is deployed and orchestrated [using containers](https://gitlab.com/gabrielelucci/cloud) on rented Linux hosts. Services that expose HTTP functionalities are proxied using **Caddy**, which automatically handles certificates and also acts as load balancer. Additionally, pretty much everything is "instrumented" using [**Prometheus**](https://prometheus.io/) and monitored using [**Grafana**](https://grafana.com/).
 
+I'm very proud of this project, it taught me plenty of skills that complement my developer profile quite well, and I consider it a great way to keep up with the latest trends in the field.
 """
 
+[[params.projects.list]]
+title = "Private \"AI lab\""
+meta = "Experimenting with local LLMs"
+tagline = """
+I've been experimenting with local LLMs for a while now, using llama.cpp and various complementary tools to run models locally on my own hardware. I have a few different models running, that I employ for different tasks, such as **Llama** for conversational tasks, **Deepseek Coder** for Copilot-like code generation and completion, Granite for text embedding of documents, and others.
+
+To make the usage of these models easier, I employed simple frontend solutions such as [**Open WebUI**](https://openwebui.com/) and [**ComfyUI**](https://www.comfy.org/), which allow me to query the models using a web interface.
+
+This is a fun project that helps me to keep up with the latest developments in the field of AI. It also provided me with a basic understanding of what it takes to deploy local models, a skill that could be useful in contexts where data privacy is a concern and the use of cloud services isn't desirable.
+"""
 # [params.information]
 # enable = true
 #
