@@ -141,7 +141,7 @@ name = "汉语"
 level = "A1 - Beginner"
 
 [params.interests]
-enable = true
+enable = false
 [[params.interests.list]]
 name = "Music"
 [[params.interests.list]]
@@ -165,6 +165,22 @@ In my spare time, I especially enjoy engaging in various music-related activitie
 
 [params.experience]
 enable = true
+
+[[params.experience.list]]
+title = "Django developer"
+dates = "Jun 2025 - Present"
+company = "I Mille"
+details = """
+I work as a Django developer, specializing in building CMS solutions for various clients, including prominent names like Barilla, Maire Group, Cotral, and Locauto.
+"""
+
+[[params.experience.list]]
+title = "Salesforce Developer"
+dates = "Apr 2024 - Set 2024"
+company = "Alpenite"
+details = """
+I contributed to the development and maintenance of e-commerce websites based on Salesforce Commerce Cloud for clients like Pinko and Golden Goose.
+"""
 
 [[params.experience.list]]
 title = "Technician / Full stack developer"
