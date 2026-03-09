@@ -1,6 +1,6 @@
 # Page settings
 
-baseURL = "https://gabriele.lucci.xyz/"
+baseURL = "https://gabriele.lucci.xyz/resume/"
 languageCode = "en"
 title = "Gabriele Lucci's resume"
 theme = "hugo-devresume-theme"
@@ -9,7 +9,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
 author = "Gabriele Lucci"
-description = "Gabriele Lucci's resume - english"
+description = "Software developer experienced in Python, Django, JavaScript and Node.js, specializing in backend web development and cloud-native solutions."
+keywords = ["software developer", "web developer", "python", "django", "nodejs", "javascript", "golang", "flask"]
+canonical = "https://gabriele.lucci.xyz/resume"
 
 [params.profile]
 enable = true
