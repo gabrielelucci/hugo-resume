@@ -5,7 +5,7 @@ languageCode = "en"
 title = "Gabriele Lucci's resume"
 theme = "hugo-devresume-theme"
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "term"]
 
 [params]
 author = "Gabriele Lucci"
@@ -22,13 +22,13 @@ avatar = false
 [params.contact]
 enable = true
 
-# [[params.contact.list]]
-# icon = "fas fa-map-marked-alt"
-# url = "geo://41.83909,12.89068"
-# text = "Palestrina, RM"
+[[params.contact.list]]
+icon = "fas fa-map-marked-alt"
+url = "geo:41.83909,12.89068"
+text = "Palestrina, RM, Italy"
 [[params.contact.list]]
 icon = "fas fa-envelope"
-url = "mailto://gabriele@lucci.xyz"
+url = "mailto:gabriele@lucci.xyz"
 text = "gabriele@lucci.xyz"
 [[params.contact.list]]
 icon = "fab fa-github"
