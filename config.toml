@@ -170,28 +170,30 @@ enable = true
 
 [[params.experience.list]]
 title = "Django developer"
-dates = "Jun 2025 - Present"
+dates = "Jun 2025 - Feb 2026"
 company = "I Mille"
 details = """
-I work as a Django developer, specializing in building CMS solutions for various clients, including prominent names like Barilla, Maire Group, Cotral, and Locauto.
+* Developed custom-tailored Content Management System (CMS) solutions using __Django CMS__.
+* Delivered projects for prominent enterprise clients, including Barilla, Maire Group, Cotral, and Locauto.
 """
 
 [[params.experience.list]]
 title = "Salesforce Developer"
-dates = "Apr 2024 - Set 2024"
+dates = "Apr 2024 - Sep 2024"
 company = "Alpenite"
 details = """
-I contributed to the development and maintenance of e-commerce websites based on Salesforce Commerce Cloud for clients like Pinko and Golden Goose.
+* Developed and maintained e-commerce platforms utilizing Salesforce Commerce Cloud.
+* Delivered technical solutions for high-profile retail clients, including Pinko and Golden Goose.
 """
 
 [[params.experience.list]]
 title = "Technician / Full stack developer"
 dates = "May 2021 - Dec 2023"
-company = "Eurac Research (Institute of Biomedicine)"
+company = "Eurac Research (Institute for Biomedicine)"
 details = """
-As part of the IT team at the [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) of Eurac Research, I worked primarily on the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project, which involved the creation of a “dynamic data portal”, a web app enabling researchers, even from outside institutions, to peruse a set of the data gathered by Eurac's IfB studies.
-
-Due to the small size of our development team, we decided to build the portal as a full-stack __Django__ application, that included an HTTP API to be queried by complementary internal tools. I played a significant role in deciding the project's architecture and implementation;  it's been a real benchmark of my skills that was ultimately a success, and I'm quite proud of what was achieved.
+* Developed a "dynamic data portal" for the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project at Eurac Research's [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine), enabling internal and external researchers to explore gathered study data.
+* Built the portal as a full-stack **Django** application, featuring an HTTP API designed to integrate with complementary internal tools.
+* Played a key role in designing the project's architecture and driving its successful technical implementation.
 """
 
 [[params.experience.list]]
@@ -199,14 +201,11 @@ title = "Backend developer"
 dates = "Jul 2017 - Jan 2021"
 company = "Fondazione Openpolis"
 details = """
-I worked for the [Openpolis Foundation](https://www.openpolis.it/), supporting their editorial team by developing multiple web applications and toolkits using __Python__ and __Django__.
-
-Those are the most relevant projects I was involed in:
-- "[Mappe del potere](https://fondazione.openpolis.it/en/cosa-facciamo/mappe-del-potere)": essentially a database of all things related to Italian politicians, modeled following the [Popolo](https://www.popoloproject.com/) open specification. It essentially consists of a core implemented as an open-source [Django app](https://github.com/openpolis/django-popolo), a complex *REST API* that exposes the underlying data, and a [custom-built task manager](https://github.com/openpolis/django-uwsgi-taskmanager) to handle and scheduling background tasks. The data was gathered from numerous different sources (HTTP APIs, *SPARQL*, *web scraping*) by ETL pipelines.
-- "[Povertà educativa](https://www.openpolis.it/poverta-educativa/)": a project that shares a lot of components and concepts with the previously listed one, but with a particular focus on the socio-economic conditions of minors in Italy.
-- "[A schede scoperte](https://www.openpolis.it/schede-scoperte-politiche-2018/)": an application implemented in Django and **React**, with the purpose of promoting transparency during the 2018 Italian general elections.
-
-This was a pivotal role for my career, as I was lucky enough to have an expert mentor who taught me a lot of extremely valuable skills that I consider fundamental to my profile.
+- Developed web applications and toolkits with __Django__ and __Python__ to support the [Openpolis Foundation](https://www.openpolis.it/)'s editorial team.
+- "[Mappe del potere](https://fondazione.openpolis.it/en/cosa-facciamo/mappe-del-potere)": Built an open-source database of Italian politicians ([Popolo](https://www.popoloproject.com/) spec) featuring a Django core, _REST API_, custom background task manager, and _ETL pipelines_ for data gathering (APIs, SPARQL, web scraping).
+- "[Povertà educativa](https://www.openpolis.it/poverta-educativa/)": Adapted the existing architecture to track and analyze the socio-economic conditions of minors in Italy.
+- "[A schede scoperte](https://www.openpolis.it/schede-scoperte-politiche-2018/)": Created a Django and React application to promote transparency during the 2018 Italian general elections.
+- Experienced a pivotal career phase, gaining fundamental professional skills through expert mentorship.
 """
 
 [[params.experience.list]]
@@ -214,8 +213,9 @@ title = "Full stack developer"
 dates = "Sep 2016 - Jul 2017"
 company = "Anansi Team"
 details = """
-I was the lead developer of "APA Cloud", a suite of server side applications that would gather, store, and visualize air quality sensor data. Mainly developed using __Node.js__ ([LoopBack 3](https://loopback.io/) and [Sails.js](https://sailsjs.com/)) for the backend, and __Angular v1__ for the frontend.
-
+- Led the development of "APA Cloud," a server-side application suite designed to gather, store, and visualize air quality sensor data.
+- Built the backend infrastructure using __Node.js__, specifically leveraging the LoopBack 3 and Sails.js frameworks.
+- Developed the frontend data visualization and user interface utilizing __Angular v1__.
 """
 
 [params.projects]
@@ -225,14 +225,12 @@ enable = true
 title = "My own self-hosted \"cloud\""
 meta = "a.k.a. \"LucciCloud\""
 tagline = """
-I've been maintaining an array of self-hosted services for years.
-
-Some of the services I run (there are more, but these are the most relevant):
+I've been maintaining an array of self-hosted services for years, including but not limited to:
  - a bunch of [Fediverse](https://en.wikipedia.org/wiki/Fediverse) nodes ([**Mastodon**](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/))
  - a [**Nextcloud**](https://nextcloud.com) server, which I use daily to back up my photos, store documents and sync contacts and calendars between my personal devices.
  - [Grocy](https://grocy.info/), an ERP for managing groceries and alike.
  - a Minecraft game server because… why not?
-  - [this very website](https://gitlab.com/gabrielelucci/hugo-resume) (made with [**Hugo**](https://gohugo.io/))!
+  - [this very resume](https://gitlab.com/gabrielelucci/hugo-resume) (made with [**Hugo**](https://gohugo.io/))!
 
 Everything is deployed and orchestrated [using containers](https://gitlab.com/gabrielelucci/cloud) on rented Linux hosts. Services that expose HTTP functionalities are proxied using **Caddy**, which automatically handles certificates and also acts as load balancer. Additionally, pretty much everything is "instrumented" using [**Prometheus**](https://prometheus.io/) and monitored using [**Grafana**](https://grafana.com/).
 
