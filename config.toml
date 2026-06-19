@@ -25,7 +25,7 @@ enable = true
 [[params.contact.list]]
 icon = "fas fa-map-marked-alt"
 url = "geo:41.83909,12.89068"
-text = "Palestrina, RM, Italy"
+text = "Rome, RM, Italy"
 [[params.contact.list]]
 icon = "fas fa-envelope"
 url = "mailto:gabriele@lucci.xyz"
@@ -72,7 +72,7 @@ details = "Data modeling"
 [[params.skills.list.items]]
 details = "HTTP API design"
 [[params.skills.list.items]]
-details = "Containerization"
+details = "Containerization (Docker, Podman)"
 [[params.skills.list.items]]
 details = "Full Text-search"
 [[params.skills.list.items]]
@@ -85,9 +85,9 @@ details = "Version control (Git)"
 [[params.skills.list.items]]
 details = "Repository management (GitLab, GitHub, Bitbucket)"
 [[params.skills.list.items]]
-details = "OCI Containers (Docker, Podman)"
+details = "CI/CD (GitLab CI, GitHub Actions)"
 [[params.skills.list.items]]
-details = "Python (mypy, ruff, uv)"
+details = "Static analysis (mypy, ruff, uv)"
 [[params.skills.list.items]]
 details = "IDE (PyCharm, VSCode)"
 
@@ -98,7 +98,7 @@ details = "Linux (Debian, RedHat, Arch)"
 [[params.skills.list.items]]
 details = "Web servers (Nginx, Caddy, Apache)"
 [[params.skills.list.items]]
-details = "Container orchestration (Compose, Kubernetes)"
+details = "Orchestration (Compose, Kubernetes)"
 [[params.skills.list.items]]
 details = "Monitoring (Prometheus, Grafana)"
 
@@ -158,11 +158,11 @@ name = "Inline skating"
 [params.summary]
 enable = true
 text = """
-I'm a software developer with professional experience in __Python__ and __JavaScript/Node.js__, particularly on the backend side of web development, with a proven track record on delivering cloud-native solutions from the drawing board to production.
+I'm a software developer with professional experience in __Python__ and __JavaScript/Node.js__, especially on the backend side of web development, with a proven track record on delivering cloud-native solutions from the drawing board to production.
 
-I'm a detail-oriented perfectionist, but also versatile and constantly looking for new challenges. I enjoy working with __Django__ (who doesn't? ), but I'm always open to learning new technologies. Additionally, I'm quite proficient in administering __Linux__ systems, which I've been using in some form or another since I was a kid.
+I'm a detail-oriented perfectionist, but also versatile and constantly looking for new challenges. I particularly enjoy using __Django__ (who doesn't? ), but I'm always open to learning new technologies. Additionally, I'm quite proficient in administering __Linux__ systems, which I've been using in some form or another since I was a kid.
 
-In my spare time, I especially enjoy engaging in various music-related activities, such as playing bass guitar with [my friends](https://www.instagram.com/lefogliemusic/).
+In my spare time, I like engaging in various music-related activities, such as playing bass guitar with [my friends](https://www.instagram.com/lefogliemusic/).
 """
 
 [params.experience]
@@ -225,27 +225,27 @@ enable = true
 title = "My own self-hosted \"cloud\""
 meta = "a.k.a. \"LucciCloud\""
 tagline = """
-I've been maintaining an array of self-hosted services for years, including but not limited to:
- - a bunch of [Fediverse](https://en.wikipedia.org/wiki/Fediverse) nodes ([**Mastodon**](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/))
- - a [**Nextcloud**](https://nextcloud.com) server, which I use daily to back up my photos, store documents and sync contacts and calendars between my personal devices.
- - [Grocy](https://grocy.info/), an ERP for managing groceries and alike.
- - a Minecraft game server because… why not?
+I mantain an array of self-hosted services, as a personal project that's been ongoing in some capacity for 15+ years. The current roster includes:
+  - some [Fediverse](https://en.wikipedia.org/wiki/Fediverse) nodes ([**Mastodon**](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/))
+  - a [**Nextcloud**](https://nextcloud.com) server, which I use daily to back up my pictures, store documents and sync contacts and calendars between my personal devices.
+  - [Grocy](https://grocy.info/), an ERP for managing groceries and alike.
+  - a Minecraft game server because… why not?
   - [this very resume](https://gitlab.com/gabrielelucci/hugo-resume) (made with [**Hugo**](https://gohugo.io/))!
 
-Everything is deployed and orchestrated [using containers](https://gitlab.com/gabrielelucci/cloud) on rented Linux hosts. Services that expose HTTP functionalities are proxied using **Caddy**, which automatically handles certificates and also acts as load balancer. Additionally, pretty much everything is "instrumented" using [**Prometheus**](https://prometheus.io/) and monitored using [**Grafana**](https://grafana.com/).
+Everything is deployed and orchestrated [using containers](https://gitlab.com/gabrielelucci/cloud) on rented Linux hosts. Web services are proxied using **Caddy**, which automatically handles certificates and also acts as load balancer. Additionally, pretty much everything is "instrumented" using [**Prometheus**](https://prometheus.io/) and monitored using [**Grafana**](https://grafana.com/).
 
-I'm very proud of this project, it taught me plenty of skills that complement my developer profile quite well, and I consider it a great way to keep up with the latest trends in the field.
+I'm very proud of this project, it taught me plenty of skills that I think complement my developer profile, and I consider it a great way to keep up with the latest trends in the field.
 """
 
 [[params.projects.list]]
-title = "Private \"AI lab\""
+title = "Private AI lab"
 meta = "Experimenting with local LLMs"
 tagline = """
 I've been experimenting with local LLMs for a while now, using llama.cpp and various complementary tools to run models locally on my own hardware. I have a few different models running, that I employ for different tasks, such as **Llama** for conversational tasks, **Deepseek Coder** for Copilot-like code generation and completion, Granite for text embedding of documents, and others.
 
 To make the usage of these models easier, I employed simple frontend solutions such as [**Open WebUI**](https://openwebui.com/) and [**ComfyUI**](https://www.comfy.org/), which allow me to query the models using a web interface.
 
-This is a fun project that helps me to keep up with the latest developments in the field of AI. It also provided me with a basic understanding of what it takes to deploy local models, a skill that could be useful in contexts where data privacy is a concern and the use of cloud services isn't desirable.
+This is a fun project that helps me to keep up with the latest developments in the field of AI. It also provided me with a basic understanding of what it takes to deploy local models, a skill that could be useful in contexts where data privacy is a concern and the use of cloud models isn't desirable.
 """
 # [params.information]
 # enable = true
