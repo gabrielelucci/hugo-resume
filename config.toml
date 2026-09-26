@@ -57,9 +57,7 @@ details = "Python"
 [[params.skills.list.items]]
 details = "Golang"
 [[params.skills.list.items]]
-details = "Javascript / Node.js"
-[[params.skills.list.items]]
-details = "Java / Android"
+details = "JavaScript / Node.js"
 
 [[params.skills.list]]
 title = "Web development"
@@ -74,7 +72,7 @@ details = "HTTP API design"
 [[params.skills.list.items]]
 details = "Containerization (Docker, Podman)"
 [[params.skills.list.items]]
-details = "Full Text-search"
+details = "Full-text search"
 [[params.skills.list.items]]
 details = "Scraping / ETL"
 
@@ -87,14 +85,14 @@ details = "Repository management (GitLab, GitHub, Bitbucket)"
 [[params.skills.list.items]]
 details = "CI/CD (GitLab CI, GitHub Actions)"
 [[params.skills.list.items]]
-details = "Static analysis (mypy, ruff, uv)"
+details = "DevEx tooling (mypy, ruff, uv)"
 [[params.skills.list.items]]
 details = "IDE (PyCharm, VSCode)"
 
 [[params.skills.list]]
 title = "SysAdmin"
 [[params.skills.list.items]]
-details = "Linux (Debian, RedHat, Arch)"
+details = "Linux (Debian, Red Hat, Arch)"
 [[params.skills.list.items]]
 details = "Web servers (Nginx, Caddy, Apache)"
 [[params.skills.list.items]]
@@ -133,13 +131,13 @@ dates = "2009 - 2016"
 enable = true
 
 [[params.languages.list]]
-name = "Italiano"
+name = "Italian"
 level = "Native"
 [[params.languages.list]]
 name = "English"
 level = "C1 - Proficient"
 [[params.languages.list]]
-name = "汉语"
+name = "Chinese"
 level = "A1 - Beginner"
 
 [params.interests]
@@ -158,11 +156,11 @@ name = "Inline skating"
 [params.summary]
 enable = true
 text = """
-I'm a software developer with professional experience in __Python__ and __JavaScript/Node.js__, especially on the backend side of web development, with a proven track record on delivering cloud-native solutions from the drawing board to production.
+I'm a software developer with professional experience in __Python__ and __JavaScript/Node.js__, especially on the backend side of web development, with a proven track record in delivering cloud-native solutions from the drawing board to production.
 
-I'm a detail-oriented perfectionist, but also versatile and constantly looking for new challenges. I particularly enjoy using __Django__ (who doesn't? ), but I'm always open to learning new technologies. Additionally, I'm quite proficient in administering __Linux__ systems, which I've been using in some form or another since I was a kid.
+I particularly enjoy using __Django__, but I'm always open to learning new technologies. Additionally, I'm quite proficient in administering __Linux__ systems, which I've been using in some form or another since I was a kid.
 
-In my spare time, I like engaging in various music-related activities, such as playing bass guitar with [my friends](https://www.instagram.com/lefogliemusic/).
+Open to web development and advancement opportunities, remote or Rome-based.
 """
 
 [params.experience]
@@ -173,27 +171,27 @@ title = "Django developer"
 dates = "Jun 2025 - Feb 2026"
 company = "I Mille"
 details = """
-* Developed custom-tailored Content Management System (CMS) solutions using __Django CMS__.
-* Delivered projects for prominent enterprise clients, including Barilla, Maire Group, Cotral, and Locauto.
+- Developed custom-tailored Content Management System (CMS) solutions using __Django CMS__.
+- Delivered projects for prominent enterprise clients, including Barilla, Maire Group, Cotral, and Locauto.
 """
 
 [[params.experience.list]]
-title = "Salesforce Developer"
+title = "Salesforce developer"
 dates = "Apr 2024 - Sep 2024"
 company = "Alpenite"
 details = """
-* Developed and maintained e-commerce platforms utilizing Salesforce Commerce Cloud.
-* Delivered technical solutions for high-profile retail clients, including Pinko and Golden Goose.
+- Developed and maintained e-commerce platforms utilizing Salesforce Commerce Cloud.
+- Delivered technical solutions for high-profile retail clients, including Pinko and Golden Goose.
 """
 
 [[params.experience.list]]
-title = "Technician / Full stack developer"
+title = "Technician / Full-stack developer"
 dates = "May 2021 - Dec 2023"
 company = "Eurac Research (Institute for Biomedicine)"
 details = """
-* Developed a "dynamic data portal" for the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project at Eurac Research's [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine), enabling internal and external researchers to explore gathered study data.
-* Built the portal as a full-stack **Django** application, featuring an HTTP API designed to integrate with complementary internal tools.
-* Played a key role in designing the project's architecture and driving its successful technical implementation.
+- Developed a "dynamic data portal" for the [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) project at Eurac Research's [Institute for Biomedicine](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine), enabling internal and external researchers to explore gathered study data.
+- Built the portal as a full-stack __Django__ application, featuring an HTTP API designed to integrate with complementary internal tools.
+- Played a key role in designing the project's architecture and driving its successful technical implementation.
 """
 
 [[params.experience.list]]
@@ -209,7 +207,7 @@ details = """
 """
 
 [[params.experience.list]]
-title = "Full stack developer"
+title = "Full-stack developer"
 dates = "Sep 2016 - Jul 2017"
 company = "Anansi Team"
 details = """
@@ -225,28 +223,29 @@ enable = true
 title = "My own self-hosted \"cloud\""
 meta = "a.k.a. \"LucciCloud\""
 tagline = """
-I mantain an array of self-hosted services, as a personal project that's been ongoing in some capacity for 15+ years. The current roster includes:
+I maintain an array of self-hosted services, as a personal project that's been ongoing in some capacity for 15+ years. The current roster includes:
   - some [Fediverse](https://en.wikipedia.org/wiki/Fediverse) nodes ([**Mastodon**](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/))
-  - a [**Nextcloud**](https://nextcloud.com) server, which I use daily to back up my pictures, store documents and sync contacts and calendars between my personal devices.
-  - [Grocy](https://grocy.info/), an ERP for managing groceries and alike.
+  - a [**Nextcloud**](https://nextcloud.com) server, which I use daily to back up my pictures, store documents and sync contacts and calendars between my personal devices
+  - [Grocy](https://grocy.info/), an ERP for managing groceries and the like
   - a Minecraft game server because… why not?
   - [this very resume](https://gitlab.com/gabrielelucci/hugo-resume) (made with [**Hugo**](https://gohugo.io/))!
 
-Everything is deployed and orchestrated [using containers](https://gitlab.com/gabrielelucci/cloud) on rented Linux hosts. Web services are proxied using **Caddy**, which automatically handles certificates and also acts as load balancer. Additionally, pretty much everything is "instrumented" using [**Prometheus**](https://prometheus.io/) and monitored using [**Grafana**](https://grafana.com/).
+Everything is deployed and orchestrated [using containers](https://gitlab.com/gabrielelucci/cloud) on rented Linux hosts. Web services are proxied using **Caddy**, which automatically handles certificates and also acts as a load balancer. Additionally, pretty much everything is "instrumented" using [**Prometheus**](https://prometheus.io/) and monitored using [**Grafana**](https://grafana.com/).
 
-I'm very proud of this project, it taught me plenty of skills that I think complement my developer profile, and I consider it a great way to keep up with the latest trends in the field.
+I'm very proud of this project: it taught me plenty of skills that I think complement my developer profile, and I consider it a great way to keep up with the latest trends in the field.
 """
 
 [[params.projects.list]]
 title = "Private AI lab"
 meta = "Experimenting with local LLMs"
 tagline = """
-I've been experimenting with local LLMs for a while now, using llama.cpp and various complementary tools to run models locally on my own hardware. I have a few different models running, that I employ for different tasks, such as **Llama** for conversational tasks, **Deepseek Coder** for Copilot-like code generation and completion, Granite for text embedding of documents, and others.
+I've been experimenting with local LLMs for a while now, using llama.cpp and various complementary tools to run models locally on my own hardware. I have a few different models running, which I employ for different tasks, such as **Llama** for conversational tasks, **DeepSeek Coder** for Copilot-like code generation and completion, **Granite** for text embedding of documents, and others.
 
 To make the usage of these models easier, I employed simple frontend solutions such as [**Open WebUI**](https://openwebui.com/) and [**ComfyUI**](https://www.comfy.org/), which allow me to query the models using a web interface.
 
 This is a fun project that helps me to keep up with the latest developments in the field of AI. It also provided me with a basic understanding of what it takes to deploy local models, a skill that could be useful in contexts where data privacy is a concern and the use of cloud models isn't desirable.
 """
+
 # [params.information]
 # enable = true
 #
