@@ -21,6 +21,12 @@ url = "mailto:gabriele@lucci.xyz"
 label = "Email"
 text = "gabriele@lucci.xyz"
 [[contact.list]]
+# Local builds only, for printing: never commit the number.
+icon = "fas fa-phone"
+url = "tel:"
+label = "Telefono"
+env = "HUGO_RESUME_PHONE"
+[[contact.list]]
 icon = "fab fa-linkedin"
 url = "https://www.linkedin.com/in/gabriele-lucci-7a905b118"
 label = "LinkedIn"

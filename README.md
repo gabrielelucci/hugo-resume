@@ -33,6 +33,23 @@ hugo server -D
 The site will be available at `http://localhost:1313/resume/` (English) and
 `http://localhost:1313/resume/it/` (Italian).
 
+## Printing to PDF
+
+The phone number is read from `HUGO_RESUME_PHONE` at build time, so it never lands in
+the repository or on the published site, where it would get scraped. To print a copy
+with it, serve the resume locally and use the browser's _Print → Save as PDF_:
+
+```sh
+HUGO_RESUME_PHONE="+39 …" hugo server
+```
+
+Or, without a local Hugo:
+
+```sh
+podman run --rm -e HUGO_RESUME_PHONE="+39 …" -v .:/src:Z -p 1313:1313 \
+  ghcr.io/hugomods/hugo:exts hugo server --bind 0.0.0.0
+```
+
 ## Production build
 
 ### Using Hugo directly
