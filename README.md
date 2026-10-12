@@ -2,7 +2,7 @@
 
 This project generates a personal resume using Hugo, a static site generator.
 
-The resume is defined in [config.toml](config.toml) and is styled using the [companion Hugo theme](https://github.com/gabrielelucci/hugo-devresume-theme).
+The resume is defined in [config/_default/](config/_default/) and is styled using the [companion Hugo theme](https://github.com/gabrielelucci/hugo-devresume-theme).
 
 ## Prerequisites
 

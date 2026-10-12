@@ -1,159 +1,130 @@
-# Page settings
-
-baseURL = "https://gabriele.lucci.xyz/resume/"
-languageCode = "en"
-title = "Gabriele Lucci's resume"
-theme = "hugo-devresume-theme"
-enableRobotsTXT = true
-disableKinds = ["taxonomy", "term"]
-
-[params]
-author = "Gabriele Lucci"
 description = "Software developer experienced in Python, Django, JavaScript and Node.js, specializing in backend web development and cloud-native solutions."
 keywords = ["software developer", "web developer", "python", "django", "nodejs", "javascript", "golang", "flask"]
-canonical = "https://gabriele.lucci.xyz/resume"
 
-[params.profile]
+[profile]
 enable = true
 name = "Gabriele Lucci"
 tagline = "Software developer"
 avatar = false
 
-[params.contact]
+[contact]
 enable = true
 
-[[params.contact.list]]
+[[contact.list]]
 icon = "fas fa-map-marked-alt"
 url = "geo:41.83909,12.89068"
 text = "Rome, RM, Italy"
-[[params.contact.list]]
+[[contact.list]]
 icon = "fas fa-envelope"
 url = "mailto:gabriele@lucci.xyz"
 text = "gabriele@lucci.xyz"
-[[params.contact.list]]
+[[contact.list]]
 icon = "fab fa-github"
 url = "https://github.com/gabrielelucci"
 text = "GitHub"
-[[params.contact.list]]
+[[contact.list]]
 icon = "fab fa-gitlab"
 url = "https://gitlab.com/gabrielelucci"
 text = "GitLab.com"
-[[params.contact.list]]
+[[contact.list]]
 icon = "fas fa-comments"
 url = "https://matrix.to/#/@gabrielelucci_xyz:matrix.org"
 text = "Matrix"
-[[params.contact.list]]
+[[contact.list]]
 icon = "fab fa-linkedin"
 url = "https://www.linkedin.com/in/gabriele-lucci-7a905b118"
 text = "LinkedIn"
 
-[params.skills]
+[skills]
 enable = true
 
-[[params.skills.list]]
+[[skills.list]]
 title = "Programming"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Python"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Golang"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "JavaScript / Node.js"
 
-[[params.skills.list]]
+[[skills.list]]
 title = "Web development"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Django / Flask"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "SQL (Postgres, SQLite)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Data modeling"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "HTTP API design"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Containerization (Docker, Podman)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Full-text search"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Scraping / ETL"
 
-[[params.skills.list]]
+[[skills.list]]
 title = "Tooling"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Version control (Git)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Repository management (GitLab, GitHub, Bitbucket)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "CI/CD (GitLab CI, GitHub Actions)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "DevEx tooling (mypy, ruff, uv)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "IDE (PyCharm, VSCode)"
 
-[[params.skills.list]]
+[[skills.list]]
 title = "SysAdmin"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Linux (Debian, Red Hat, Arch)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Web servers (Nginx, Caddy, Apache)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Orchestration (Compose, Kubernetes)"
-[[params.skills.list.items]]
+[[skills.list.items]]
 details = "Monitoring (Prometheus, Grafana)"
 
-[params.education]
+[education]
 enable = true
 
-[[params.education.list]]
+[[education.list]]
 degree = "Higher Technical Institute diploma"
 iscedCode = "3"
 university = "IISS J. Von Neumann"
 city = "Rome"
 dates = "2009 - 2016"
 
-# [[params.education.list]]
-# degree = "BSc Maths and Physics"
-# university = "Imperial College London"
-# dates = "2007 - 2010"
-
-# [params.awards]
-# enable = true
-#
-# [[params.awards.list]]
-# name = "Award Lorem Ipsum"
-# body = "Microsoft lorem ipsum"
-# date = "2019"
-# [[params.awards.list]]
-# name = "Award Donec Sodales"
-# body = "Oracle Aenean"
-# date = "2017"
-
-[params.languages]
+[languages]
 enable = true
 
-[[params.languages.list]]
+[[languages.list]]
 name = "Italian"
 level = "Native"
-[[params.languages.list]]
+[[languages.list]]
 name = "English"
 level = "C1 - Proficient"
-[[params.languages.list]]
+[[languages.list]]
 name = "Chinese"
 level = "A1 - Beginner"
 
-[params.interests]
+[interests]
 enable = false
-[[params.interests.list]]
+[[interests.list]]
 name = "Music"
-[[params.interests.list]]
+[[interests.list]]
 name = "Coffee"
-[[params.interests.list]]
+[[interests.list]]
 name = "Cooking"
-[[params.interests.list]]
+[[interests.list]]
 name = "Videogames"
-[[params.interests.list]]
+[[interests.list]]
 name = "Inline skating"
 
-[params.summary]
+[summary]
 enable = true
 text = """
 I'm a software developer with professional experience in __Python__ and __JavaScript/Node.js__, especially on the backend side of web development, with a proven track record in delivering cloud-native solutions from the drawing board to production.
@@ -163,10 +134,10 @@ I particularly enjoy using __Django__, but I'm always open to learning new techn
 Open to web development and adjacent opportunities, remote or Rome-based.
 """
 
-[params.experience]
+[experience]
 enable = true
 
-[[params.experience.list]]
+[[experience.list]]
 title = "Django developer"
 dates = "Jun 2025 - Feb 2026"
 company = "I Mille"
@@ -175,7 +146,7 @@ details = """
 - Delivered projects for prominent enterprise clients, including Barilla, Maire Group, Cotral, and Locauto.
 """
 
-[[params.experience.list]]
+[[experience.list]]
 title = "Salesforce developer"
 dates = "Apr 2024 - Sep 2024"
 company = "Alpenite"
@@ -184,7 +155,7 @@ details = """
 - Delivered technical solutions for high-profile retail clients, including Pinko and Golden Goose.
 """
 
-[[params.experience.list]]
+[[experience.list]]
 title = "Technician / Full-stack developer"
 dates = "May 2021 - Dec 2023"
 company = "Eurac Research (Institute for Biomedicine)"
@@ -194,7 +165,7 @@ details = """
 - Played a key role in designing the project's architecture and driving its successful technical implementation.
 """
 
-[[params.experience.list]]
+[[experience.list]]
 title = "Backend developer"
 dates = "Jul 2017 - Jan 2021"
 company = "Fondazione Openpolis"
@@ -206,7 +177,7 @@ details = """
 - Experienced a pivotal career phase, gaining fundamental professional skills through expert mentorship.
 """
 
-[[params.experience.list]]
+[[experience.list]]
 title = "Full-stack developer"
 dates = "Sep 2016 - Jul 2017"
 company = "Anansi Team"
@@ -216,10 +187,10 @@ details = """
 - Developed the frontend data visualization and user interface utilizing __Angular v1__.
 """
 
-[params.projects]
+[projects]
 enable = true
 
-[[params.projects.list]]
+[[projects.list]]
 title = "My own self-hosted \"cloud\""
 meta = "a.k.a. \"LucciCloud\""
 tagline = """
@@ -235,7 +206,7 @@ Everything is deployed and orchestrated [using containers](https://gitlab.com/ga
 I'm very proud of this project: it taught me plenty of skills that I think complement my developer profile, and I consider it a great way to keep up with the latest trends in the field.
 """
 
-[[params.projects.list]]
+[[projects.list]]
 title = "Private AI lab"
 meta = "Experimenting with local LLMs"
 tagline = """
@@ -245,33 +216,3 @@ To make the usage of these models easier, I employed simple frontend solutions s
 
 This is a fun project that helps me to keep up with the latest developments in the field of AI. It also provided me with a basic understanding of what it takes to deploy local models, a skill that could be useful in contexts where data privacy is a concern and the use of cloud models isn't desirable.
 """
-
-# [params.information]
-# enable = true
-#
-# [[params.information.list]]
-# title = "Papers"
-# [[params.information.list.items]]
-# details = "2018 · Lorem Ipsum"
-# [[params.information.list.items]]
-# details = "2016 · Sed Fringilla"
-# [[params.information.list]]
-# title = "Interests"
-# details = "Climbing, Snowboarding, Photography, Travelling"
-
-[params.social]
-enable = false
-
-[[params.social.list]]
-icon = "fab fa-mastodon"
-url = "https://mastodon.lucci.xyz/@gabriele"
-title = "@gabriele"
-# [[params.social.list]]
-# icon = "fab fa-spotify"
-# url = "https://open.spotify.com/user/gabrielelucci"
-# title = "gabrielelucci"
-
-[params.footer]
-enable = true
-copyright = "Gabriele Lucci"
-

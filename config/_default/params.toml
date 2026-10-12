@@ -1,0 +1,17 @@
+# Language-neutral params. Anything with translatable text goes, whole, in
+# params.<lang>.toml.
+
+author = "Gabriele Lucci"
+canonical = "https://gabriele.lucci.xyz/resume"
+
+[social]
+enable = false
+
+[[social.list]]
+icon = "fab fa-mastodon"
+url = "https://mastodon.lucci.xyz/@gabriele"
+title = "@gabriele"
+
+[footer]
+enable = true
+copyright = "Gabriele Lucci"

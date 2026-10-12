@@ -1,0 +1,6 @@
+baseURL = "https://gabriele.lucci.xyz/resume/"
+languageCode = "en"
+title = "Gabriele Lucci's resume"
+theme = "hugo-devresume-theme"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
