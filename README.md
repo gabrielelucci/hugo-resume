@@ -2,7 +2,11 @@
 
 This project generates a personal resume using Hugo, a static site generator.
 
-The resume is defined in [config/_default/](config/_default/) and is styled using the [companion Hugo theme](https://github.com/gabrielelucci/hugo-devresume-theme).
+The resume is defined in [config/_default/](config/_default/), in English
+([params.en.toml](config/_default/params.en.toml)) and Italian
+([params.it.toml](config/_default/params.it.toml)), and is styled using the
+[companion Hugo theme](https://github.com/gabrielelucci/hugo-devresume-theme).
+Keep the two languages in sync, and check that each still prints to a single page.
 
 ## Prerequisites
 
@@ -26,7 +30,8 @@ npm ci --prefix themes/hugo-devresume-theme
 hugo server -D
 ```
 
-The site will be available at `http://localhost:1313/resume/`.
+The site will be available at `http://localhost:1313/resume/` (English) and
+`http://localhost:1313/resume/it/` (Italian).
 
 ## Production build
 

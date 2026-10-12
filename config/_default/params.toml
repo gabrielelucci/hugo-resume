@@ -2,7 +2,6 @@
 # params.<lang>.toml.
 
 author = "Gabriele Lucci"
-canonical = "https://gabriele.lucci.xyz/resume"
 
 [social]
 enable = false

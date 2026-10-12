@@ -1,0 +1,214 @@
+description = "Sviluppatore software backend con oltre 7 anni di esperienza in Python, Django e Node.js: applicazioni web, API REST e deployment cloud-native containerizzati."
+keywords = ["sviluppatore backend", "sviluppatore software", "sviluppatore web", "python", "django", "django cms", "api rest", "postgresql", "javascript", "nodejs", "docker", "linux", "golang"]
+
+[profile]
+enable = true
+name = "Gabriele Lucci"
+tagline = "Sviluppatore Software Backend · Python / Django"
+avatar = false
+
+[contact]
+enable = true
+
+[[contact.list]]
+icon = "fas fa-map-marked-alt"
+url = "geo:41.83909,12.89068"
+label = "Località"
+text = "Roma, Italia"
+[[contact.list]]
+icon = "fas fa-envelope"
+url = "mailto:gabriele@lucci.xyz"
+label = "Email"
+text = "gabriele@lucci.xyz"
+[[contact.list]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/gabriele-lucci-7a905b118"
+label = "LinkedIn"
+text = "linkedin.com/in/gabriele-lucci-7a905b118"
+[[contact.list]]
+icon = "fab fa-github"
+url = "https://github.com/gabrielelucci"
+label = "GitHub"
+text = "github.com/gabrielelucci"
+[[contact.list]]
+icon = "fab fa-gitlab"
+url = "https://gitlab.com/gabrielelucci"
+label = "GitLab"
+text = "gitlab.com/gabrielelucci"
+[[contact.list]]
+icon = "fas fa-comments"
+url = "https://matrix.to/#/@gabrielelucci_xyz:matrix.org"
+label = "Matrix"
+text = "Matrix"
+print = false
+
+[skills]
+enable = true
+
+[[skills.list]]
+title = "Programmazione"
+[[skills.list.items]]
+details = "Python"
+[[skills.list.items]]
+details = "JavaScript / Node.js"
+[[skills.list.items]]
+details = "Go (Golang)"
+[[skills.list.items]]
+details = "SQL"
+
+[[skills.list]]
+title = "Sviluppo web"
+[[skills.list.items]]
+details = "Django, Django CMS, Flask"
+[[skills.list.items]]
+details = "Progettazione di API REST"
+[[skills.list.items]]
+details = "PostgreSQL, SQLite"
+[[skills.list.items]]
+details = "Modellazione dati"
+[[skills.list.items]]
+details = "Ricerca full-text"
+[[skills.list.items]]
+details = "Web scraping / pipeline ETL (SPARQL)"
+[[skills.list.items]]
+details = "React, AngularJS"
+[[skills.list.items]]
+details = "Salesforce Commerce Cloud (SFCC)"
+
+[[skills.list]]
+title = "Strumenti"
+[[skills.list.items]]
+details = "Git (GitLab, GitHub, Bitbucket)"
+[[skills.list.items]]
+details = "CI/CD (GitLab CI, GitHub Actions)"
+[[skills.list.items]]
+details = "Tooling Python (mypy, ruff, uv)"
+
+[[skills.list]]
+title = "DevOps / Sistemi"
+[[skills.list.items]]
+details = "Linux (Debian, Red Hat, Arch)"
+[[skills.list.items]]
+details = "Docker, Podman, Docker Compose"
+[[skills.list.items]]
+details = "Kubernetes"
+[[skills.list.items]]
+details = "Nginx, Caddy, Apache"
+[[skills.list.items]]
+details = "Prometheus, Grafana, ELK"
+[[skills.list.items]]
+details = "Hosting di LLM in locale (llama.cpp)"
+
+[education]
+enable = true
+
+[[education.list]]
+degree = "Diploma di istituto tecnico (Informatica)"
+iscedCode = "3"
+university = "IISS J. Von Neumann"
+city = "Roma"
+dates = "2009 – 2016"
+
+[languages]
+enable = true
+
+[[languages.list]]
+name = "Italiano"
+level = "Madrelingua"
+[[languages.list]]
+name = "Inglese"
+level = "C1 – Avanzato"
+[[languages.list]]
+name = "Cinese"
+level = "A1 – Base"
+
+[summary]
+enable = true
+text = """
+Sviluppatore software backend con oltre 7 anni di esperienza professionale in __Python / Django__ e __JavaScript / Node.js__, specializzato nello sviluppo web cloud-native: modellazione dati, API REST, job in background, pipeline ETL e deployment containerizzati.
+
+A mio agio su tutto lo stack e sui sistemi __Linux__, che uso da quando ero bambino e che amministro ogni giorno sulla mia infrastruttura self-hosted.
+
+Disponibile per ruoli di sviluppo backend e web, da remoto o a Roma.
+"""
+
+[experience]
+enable = true
+
+[[experience.list]]
+title = "Sviluppatore Django"
+start = "2025-06"
+end = "2026-02"
+company = "I Mille"
+details = """
+- Sviluppo di siti web e soluzioni CMS (Content Management System) su misura con __Django__ e __Django CMS__.
+- Progetti per clienti enterprise, tra cui Barilla, Maire Group, Cotral e Locauto.
+"""
+
+[[experience.list]]
+title = "Sviluppatore Salesforce Commerce Cloud"
+start = "2024-04"
+end = "2024-09"
+company = "Alpenite"
+details = """
+- Sviluppo e manutenzione di e-commerce B2C su __Salesforce Commerce Cloud__ (SFCC).
+- Sviluppo di funzionalità per clienti retail di alto profilo del settore moda, tra cui Pinko e Golden Goose.
+"""
+
+[[experience.list]]
+title = "Sviluppatore Full-Stack (Tecnico)"
+start = "2021-05"
+end = "2023-12"
+company = "Eurac Research – Istituto per la biomedicina"
+details = """
+- Progettazione e sviluppo del "portale dati dinamico" del progetto [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) dell'[Istituto per la biomedicina](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) di Eurac Research, che consente a ricercatori interni ed esterni di esplorare i dati dello studio.
+- Applicazione full-stack __Django__ con API HTTP/REST per l'integrazione con altri strumenti interni.
+- Ruolo chiave nella definizione dell'architettura e nella realizzazione tecnica del progetto, dalla progettazione alla produzione.
+"""
+
+[[experience.list]]
+title = "Sviluppatore Backend"
+start = "2017-07"
+end = "2021-01"
+company = "Fondazione Openpolis"
+details = """
+- Sviluppo di applicazioni web e strumenti per l'analisi dati con __Python__ e __Django__ a supporto della redazione della [Fondazione Openpolis](https://www.openpolis.it/).
+- "[Mappe del potere](https://fondazione.openpolis.it/en/cosa-facciamo/mappe-del-potere)": database open source dei politici italiani (specifica [Popolo](https://www.popoloproject.com/)) con core Django, _API REST_, gestore di task in background e _pipeline ETL_ per la raccolta dati (API, SPARQL, web scraping).
+- "[Povertà educativa](https://www.openpolis.it/poverta-educativa/)": adattamento dell'architettura esistente per monitorare e analizzare le condizioni socio-economiche dei minori in Italia.
+- "[A schede scoperte](https://www.openpolis.it/schede-scoperte-politiche-2018/)": applicazione Django e React per la trasparenza durante le elezioni politiche italiane del 2018.
+"""
+
+[[experience.list]]
+title = "Sviluppatore Full-Stack"
+start = "2016-09"
+end = "2017-07"
+company = "Anansi Team"
+details = """
+- Sviluppo di "APA Cloud", suite server-side per raccogliere, archiviare e visualizzare dati di sensori per la qualità dell'aria (IoT).
+- Backend in __Node.js__ (LoopBack 3, Sails.js); frontend e visualizzazione dati in __AngularJS__.
+"""
+
+[projects]
+enable = true
+
+[[projects.list]]
+title = "Infrastruttura cloud self-hosted"
+meta = "Progetto personale · da oltre 15 anni, in corso"
+tagline = """
+- Gestione di servizi containerizzati su server Linux in affitto con __Docker Compose__: nodi del Fediverso ([Mastodon](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/)), [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), un server Minecraft e [questo stesso curriculum](https://gitlab.com/gabrielelucci/hugo-resume) (realizzato con [Hugo](https://gohugo.io/)).
+- Infrastruttura come codice [su Git](https://gitlab.com/gabrielelucci/cloud), con pipeline __GitLab CI/CD__ per validazione e deployment programmati, e segreti cifrati nel repository.
+- Reverse proxy __Caddy__ con certificati TLS automatici e bilanciamento del carico.
+- Metriche con __Prometheus__, dashboard in __Grafana__, log nello stack ELK.
+"""
+
+[[projects.list]]
+title = "Laboratorio AI privato"
+meta = "Progetto personale · LLM in locale"
+tagline = """
+- Esecuzione di LLM sul mio hardware con __llama.cpp__, scegliendo un modello per ogni compito: Llama per la chat, DeepSeek Coder per il completamento del codice, Granite per l'embedding di documenti.
+- Interfacce web con [Open WebUI](https://openwebui.com/) e [ComfyUI](https://www.comfy.org/) per l'uso quotidiano.
+- Esperienza pratica nel deployment di AI privata on-premise, dove i dati non devono lasciare l'organizzazione.
+"""
+
+[legal]
+text = "Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae ai sensi del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003."

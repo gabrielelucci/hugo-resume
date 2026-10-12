@@ -1,6 +1,18 @@
 baseURL = "https://gabriele.lucci.xyz/resume/"
-languageCode = "en"
-title = "Gabriele Lucci's resume"
 theme = "hugo-devresume-theme"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
+defaultContentLanguage = "en"
+
+# The title doubles as the default file name and PDF title when printing.
+[languages.en]
+languageCode = "en-US"
+languageName = "English"
+title = "Gabriele Lucci – Resume"
+weight = 1
+
+[languages.it]
+languageCode = "it-IT"
+languageName = "Italiano"
+title = "Gabriele Lucci – Curriculum Vitae"
+weight = 2
