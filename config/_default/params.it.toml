@@ -169,7 +169,7 @@ company = "Eurac Research – Istituto per la biomedicina"
 details = """
 - Progettazione e sviluppo del "portale dati dinamico" del progetto [CHRIS-2D](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine/projects/chris-2d) dell'[Istituto per la biomedicina](https://www.eurac.edu/en/institutes-center/institute-for-biomedicine) di Eurac Research, che consente a ricercatori interni ed esterni di esplorare i dati dello studio.
 - Applicazione full-stack __Django__ con API HTTP/REST per l'integrazione con altri strumenti interni.
-- Ruolo chiave nella definizione dell'architettura e nella realizzazione tecnica del progetto, dalla progettazione alla produzione.
+- Ruolo chiave nella definizione dell'architettura e nella realizzazione tecnica del progetto, dalla progettazione alla messa in produzione.
 """
 
 [[experience.list]]
