@@ -213,7 +213,7 @@ meta = "Progetto personale · LLM in locale"
 tagline = """
 - Esecuzione di LLM sul mio hardware con __llama.cpp__, scegliendo un modello per ogni compito: Llama per la chat, DeepSeek Coder per il completamento del codice, Granite per l'embedding di documenti.
 - Interfacce web con [Open WebUI](https://openwebui.com/) e [ComfyUI](https://www.comfy.org/) per l'uso quotidiano.
-- Esperienza pratica nel deployment di AI privata on-premise, dove i dati non devono lasciare l'organizzazione.
+- Esperienza pratica nel deployment di AI privata on-premise, utile laddove i dati non devono lasciare l'organizzazione.
 """
 
 [legal]
