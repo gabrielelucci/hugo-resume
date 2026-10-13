@@ -1,4 +1,4 @@
-description = "Sviluppatore software backend con oltre 7 anni di esperienza in Python, Django e Node.js: applicazioni web, API REST e deployment cloud-native containerizzati."
+description = "Sviluppatore software backend con oltre 8 anni di esperienza in Python, Django e Node.js: applicazioni web, API REST e deployment cloud-native containerizzati."
 keywords = ["sviluppatore backend", "sviluppatore software", "sviluppatore web", "python", "django", "django cms", "api rest", "postgresql", "javascript", "nodejs", "docker", "linux", "golang"]
 
 [profile]
@@ -131,7 +131,7 @@ level = "A1 – Base"
 [summary]
 enable = true
 text = """
-Sviluppatore software backend con oltre 7 anni di esperienza professionale in __Python / Django__ e __JavaScript / Node.js__, specializzato nello sviluppo web cloud-native: modellazione dati, API REST, job in background, pipeline ETL e deployment containerizzati.
+Sviluppatore software backend con oltre 8 anni di esperienza professionale in __Python / Django__ e __JavaScript / Node.js__, specializzato nello sviluppo web cloud-native: modellazione dati, API REST, job in background, pipeline ETL e deployment containerizzati.
 
 A mio agio su tutto lo stack e sui sistemi __Linux__, che uso da quando ero bambino e che amministro ogni giorno sulla mia infrastruttura self-hosted.
 

@@ -1,4 +1,4 @@
-description = "Backend software developer with 7+ years of experience in Python, Django and Node.js, building web applications, REST APIs and containerized, cloud-native deployments."
+description = "Backend software developer with 8+ years of experience in Python, Django and Node.js, building web applications, REST APIs and containerized, cloud-native deployments."
 keywords = ["backend developer", "software developer", "web developer", "python", "django", "django cms", "rest api", "postgresql", "javascript", "nodejs", "docker", "linux", "golang"]
 
 [profile]
@@ -144,7 +144,7 @@ name = "Inline skating"
 [summary]
 enable = true
 text = """
-Backend software developer with 7+ years of professional experience in __Python / Django__ and __JavaScript / Node.js__, with a track record of taking cloud-native web applications from the drawing board to production: data models, REST APIs, background jobs, ETL pipelines and containerized deployments.
+Backend software developer with 8+ years of professional experience in __Python / Django__ and __JavaScript / Node.js__, with a track record of taking cloud-native web applications from the drawing board to production: data models, REST APIs, background jobs, ETL pipelines and containerized deployments.
 
 Comfortable across the stack and on __Linux__ systems, which I've been using since I was a kid and still administer daily on my self-hosted infrastructure.
 
