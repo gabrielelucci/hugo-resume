@@ -113,7 +113,7 @@ degree = "Diploma di istituto tecnico (Informatica)"
 iscedCode = "3"
 university = "IISS J. Von Neumann"
 city = "Roma"
-dates = "2009 – 2016"
+dates = "2009 – 2015"
 
 [languages]
 enable = true
