@@ -214,17 +214,18 @@ enable = true
 title = "Self-hosted cloud infrastructure"
 meta = "Personal project · 15+ years, ongoing"
 tagline = """
-- Run containerized services on rented Linux hosts with __Docker Compose__: Fediverse nodes ([Mastodon](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/)), [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), a Minecraft server and [this very resume](https://gitlab.com/gabrielelucci/hugo-resume) (built with [Hugo](https://gohugo.io/)).
-- Infrastructure as code [in Git](https://gitlab.com/gabrielelucci/cloud), with __GitLab CI/CD__ pipelines for validation and scheduled deployments, and secrets encrypted in the repository.
+- Run containerized services on Linux hosts, alongside a few managed services, for personal and community use: Fediverse nodes ([Mastodon](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/)), [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), a Minecraft server and [my resume website](https://gitlab.com/gabrielelucci/hugo-resume) (built with [Hugo](https://gohugo.io/)).
+- Infrastructure as code [in Git](https://gitlab.com/gabrielelucci/cloud) with __Docker Compose__, and __GitLab CI/CD__ pipelines for validation and scheduled deployments.
 - __Caddy__ reverse proxy with automatic TLS certificates and load balancing.
 - Metrics with __Prometheus__, dashboards in __Grafana__, logs in the ELK stack.
+- Experience with major cloud providers: OVH, DigitalOcean, Scaleway and Cloudflare.
 """
 
 [[projects.list]]
 title = "Private AI lab"
 meta = "Personal project · local LLMs"
 tagline = """
-- Run LLMs on my own hardware with __llama.cpp__, picking a model per task: Llama for chat, DeepSeek Coder for code completion, Granite for document embeddings.
-- Web front-ends with [Open WebUI](https://openwebui.com/) and [ComfyUI](https://www.comfy.org/) for day-to-day use.
+- Run LLMs locally with __llama.cpp__.
+- Deploy web front-ends with [Open WebUI](https://openwebui.com/) and [ComfyUI](https://www.comfy.org/) for day-to-day use.
 - Hands-on experience deploying private, on-premise AI, where data must not leave the organization.
 """
