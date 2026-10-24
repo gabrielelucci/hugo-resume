@@ -1,10 +1,10 @@
-description = "Sviluppatore software backend con oltre 8 anni di esperienza in Python, Django e Node.js: applicazioni web, API REST e deployment cloud-native containerizzati."
-keywords = ["sviluppatore backend", "sviluppatore software", "sviluppatore web", "python", "django", "django cms", "api rest", "postgresql", "javascript", "nodejs", "docker", "linux", "golang"]
+description = "Sviluppatore software backend con oltre 8 anni di esperienza in Python, Django e Node.js: applicazioni web, API REST e deployment cloud-native containerizzati, e gestione di infrastruttura di produzione come codice."
+keywords = ["sviluppatore backend", "sviluppatore software", "sviluppatore web", "python", "django", "django cms", "api rest", "postgresql", "javascript", "nodejs", "docker", "linux", "golang", "devops", "infrastructure as code", "gitlab ci", "opentofu", "terraform", "cloudflare"]
 
 [profile]
 enable = true
 name = "Gabriele Lucci"
-tagline = "Sviluppatore Software Backend · Python / Django"
+tagline = "Sviluppatore Software Backend · Python / Django · DevOps"
 avatar = false
 
 [contact]
@@ -86,8 +86,6 @@ title = "Strumenti"
 [[skills.list.items]]
 details = "Git (GitLab, GitHub, Bitbucket)"
 [[skills.list.items]]
-details = "CI/CD (GitLab CI, GitHub Actions)"
-[[skills.list.items]]
 details = "Tooling Python (mypy, ruff, uv)"
 
 [[skills.list]]
@@ -95,13 +93,19 @@ title = "DevOps / Sistemi"
 [[skills.list.items]]
 details = "Linux (Debian, Red Hat, Arch)"
 [[skills.list.items]]
-details = "Docker, Podman, Docker Compose"
+details = "Docker, Podman, Docker Compose; Kubernetes"
 [[skills.list.items]]
-details = "Kubernetes"
+details = "CI/CD e GitOps (GitLab CI, GitHub Actions, Renovate)"
 [[skills.list.items]]
-details = "Nginx, Caddy, Apache"
+details = "IaC: OpenTofu / Terraform, Cloudflare (DNS, WAF)"
 [[skills.list.items]]
-details = "Prometheus, Grafana, ELK"
+details = "Caddy, Nginx / Angie, Apache"
+[[skills.list.items]]
+details = "Prometheus, Grafana, Elasticsearch"
+[[skills.list.items]]
+details = "Operatività PostgreSQL: backup, ripristini, upgrade maggiori"
+[[skills.list.items]]
+details = "Cloud: OVH, Scaleway, DigitalOcean, storage S3"
 [[skills.list.items]]
 details = "Hosting di LLM in locale (llama.cpp)"
 
@@ -133,9 +137,9 @@ enable = true
 text = """
 Sviluppatore software backend con oltre 8 anni di esperienza professionale in __Python / Django__ e __JavaScript / Node.js__, specializzato nello sviluppo web cloud-native: modellazione dati, API REST, job in background, pipeline ETL e deployment containerizzati.
 
-A mio agio su tutto lo stack e sui sistemi __Linux__, che uso da quando ero bambino e che amministro ogni giorno sulla mia infrastruttura self-hosted.
+A mio agio su tutto lo stack e su __Linux__, che uso da quando ero bambino e su cui da oltre 15 anni gestisco la mia infrastruttura di produzione, oggi tutta come codice.
 
-Disponibile per ruoli di sviluppo backend e web, come dipendente o freelance, da remoto o a Roma.
+Disponibile per ruoli di sviluppo backend, web e DevOps / platform, come dipendente o freelance, da remoto o a Roma.
 """
 
 [experience]
@@ -201,20 +205,19 @@ enable = true
 title = "Infrastruttura cloud self-hosted"
 meta = "Progetto personale e di community · da oltre 15 anni, in corso"
 tagline = """
-- Progettazione, gestione ed evoluzione di 10 progetti __Docker Compose__ (~45 container) su server Linux, [tutto in un unico repository Git](https://gitlab.com/gabrielelucci/cloud): due server [Mastodon](https://joinmastodon.org/) (uno è l'istanza community devianze.city), [GoToSocial](https://gotosocial.org/), un relay ActivityPub, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), un server Minecraft e questo curriculum.
-- Continuous delivery con __GitLab CI/CD__: ogni push viene validato, poi vengono rilasciati solo i progetti toccati, in ordine di dipendenza, su un Docker engine remoto via SSH, con roll-out condizionati agli health check e migrazioni Mastodon senza downtime. I segreti stanno cifrati nel repository (transcrypt).
+- Progettazione e gestione di 10 progetti __Docker Compose__ (~45 container) su server Linux, [tutto in un unico repository Git](https://gitlab.com/gabrielelucci/cloud): due server [Mastodon](https://joinmastodon.org/) (uno è l'istanza community devianze.city), [GoToSocial](https://gotosocial.org/), un relay ActivityPub, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), un server Minecraft e questo curriculum.
+- Continuous delivery con __GitLab CI/CD__: ogni push viene validato, poi si rilasciano solo i progetti toccati, in ordine di dipendenza, su un Docker engine remoto via SSH, con roll-out condizionati agli health check e migrazioni Mastodon senza downtime; segreti cifrati nel repository.
 - Supply chain sempre aggiornata senza intervento manuale: ogni immagine fissata al digest, __Renovate__ che unisce in automatico gli aggiornamenti sicuri e trattiene quelli rischiosi per la revisione; oltre 800 aggiornamenti rilasciati senza supervisione.
 - DNS, impostazioni di zona e regole WAF Cloudflare di due domini gestiti con __OpenTofu__: plan a ogni pipeline, apply con revisione, stato remoto con lock su GitLab.
 - Osservabilità con probe blackbox __Prometheus__ di ogni endpoint pubblico, sia dall'edge sia dall'interno della rete, per distinguere un guasto di CDN o proxy da uno del backend, e regole di alert __Grafana__ su disponibilità e scadenza TLS; reverse proxy __Caddy__ con TLS automatico, HTTP/3 e header di sicurezza.
-- Operazioni day-2: backup PostgreSQL e restic programmati su S3 con procedura di ripristino documentata, runbook per gli upgrade di versione maggiore di PostgreSQL e difesa anti-spam alle iscrizioni su tre livelli (WAF Cloudflare, rate limiting Angie, approvazione Mastodon) per l'istanza community.
+- Operazioni day-2: backup PostgreSQL e restic programmati su S3 con procedura di ripristino documentata, runbook per gli upgrade major di PostgreSQL e difesa anti-spam alle iscrizioni su tre livelli (WAF Cloudflare, rate limit Angie, approvazione Mastodon) per l'istanza community.
 """
 
 [[projects.list]]
 title = "Laboratorio AI privato"
 meta = "Progetto personale · LLM in locale"
 tagline = """
-- Esecuzione di LLM in locale con __llama.cpp__.
-- Deployment di interfacce web con [Open WebUI](https://openwebui.com/) e [ComfyUI](https://www.comfy.org/) per l'uso quotidiano.
+- Esecuzione di LLM in locale con __llama.cpp__, con le interfacce web [Open WebUI](https://openwebui.com/) e [ComfyUI](https://www.comfy.org/) per l'uso quotidiano.
 - Esperienza pratica nel deployment di AI privata on-premise, utile laddove i dati non devono lasciare l'organizzazione.
 """
 

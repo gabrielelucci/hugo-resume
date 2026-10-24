@@ -1,10 +1,10 @@
-description = "Backend software developer with 8+ years of experience in Python, Django and Node.js, building web applications, REST APIs and containerized, cloud-native deployments."
-keywords = ["backend developer", "software developer", "web developer", "python", "django", "django cms", "rest api", "postgresql", "javascript", "nodejs", "docker", "linux", "golang"]
+description = "Backend software developer with 8+ years of experience in Python, Django and Node.js, building web applications, REST APIs and containerized, cloud-native deployments, and running production infrastructure as code."
+keywords = ["backend developer", "software developer", "web developer", "python", "django", "django cms", "rest api", "postgresql", "javascript", "nodejs", "docker", "linux", "golang", "devops", "infrastructure as code", "gitlab ci", "opentofu", "terraform", "cloudflare"]
 
 [profile]
 enable = true
 name = "Gabriele Lucci"
-tagline = "Backend Software Developer · Python / Django"
+tagline = "Backend Software Developer · Python / Django · DevOps"
 avatar = false
 
 [contact]
@@ -86,8 +86,6 @@ title = "Tooling"
 [[skills.list.items]]
 details = "Git (GitLab, GitHub, Bitbucket)"
 [[skills.list.items]]
-details = "CI/CD (GitLab CI, GitHub Actions)"
-[[skills.list.items]]
 details = "Python tooling (mypy, ruff, uv)"
 
 [[skills.list]]
@@ -95,13 +93,19 @@ title = "DevOps / SysAdmin"
 [[skills.list.items]]
 details = "Linux (Debian, Red Hat, Arch)"
 [[skills.list.items]]
-details = "Docker, Podman, Docker Compose"
+details = "Docker, Podman, Docker Compose; Kubernetes"
 [[skills.list.items]]
-details = "Kubernetes"
+details = "CI/CD & GitOps (GitLab CI, GitHub Actions, Renovate)"
 [[skills.list.items]]
-details = "Nginx, Caddy, Apache"
+details = "IaC: OpenTofu / Terraform, Cloudflare (DNS, WAF)"
 [[skills.list.items]]
-details = "Prometheus, Grafana, ELK"
+details = "Caddy, Nginx / Angie, Apache"
+[[skills.list.items]]
+details = "Prometheus, Grafana, Elasticsearch"
+[[skills.list.items]]
+details = "PostgreSQL ops: backups, restores, major upgrades"
+[[skills.list.items]]
+details = "Cloud: OVH, Scaleway, DigitalOcean, S3 storage"
 [[skills.list.items]]
 details = "Local LLM hosting (llama.cpp)"
 
@@ -146,9 +150,9 @@ enable = true
 text = """
 Backend software developer with 8+ years of professional experience in __Python / Django__ and __JavaScript / Node.js__, with a track record of taking cloud-native web applications from the drawing board to production: data models, REST APIs, background jobs, ETL pipelines and containerized deployments.
 
-Comfortable across the stack and on __Linux__ systems, which I've been using since I was a kid and still administer daily on my self-hosted infrastructure.
+Comfortable across the stack and on __Linux__ systems, which I've used since I was a kid and where I've run my own production infrastructure for 15+ years, today fully as code.
 
-Open to backend and web development roles, as an employee or freelance, remote or Rome-based.
+Open to backend, web development and DevOps / platform roles, as an employee or freelance, remote or Rome-based.
 """
 
 [experience]
@@ -215,7 +219,7 @@ title = "Self-hosted cloud infrastructure"
 meta = "Personal and community project · 15+ years, ongoing"
 tagline = """
 - Design, run and evolve 10 __Docker Compose__ projects (~45 containers) on Linux hosts, [all in one Git repository](https://gitlab.com/gabrielelucci/cloud): two [Mastodon](https://joinmastodon.org/) servers (one the devianze.city community instance), [GoToSocial](https://gotosocial.org/), an ActivityPub relay, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), a Minecraft server and this résumé.
-- Continuous delivery with __GitLab CI/CD__: every push is validated, then only the projects it touched are deployed, in dependency order, to a remote Docker engine over SSH, with health-check gated roll-outs and zero-downtime Mastodon migrations. Secrets live encrypted in the repo (transcrypt).
+- Continuous delivery with __GitLab CI/CD__: every push is validated, then only the projects it touched are deployed, in dependency order, to a remote Docker engine over SSH, with health-check gated roll-outs and zero-downtime Mastodon migrations; secrets live encrypted in the repo.
 - Supply chain kept current hands-free: every image pinned by digest, __Renovate__ auto-merging safe updates and holding risky ones for review; 800+ dependency updates landed unattended.
 - Cloudflare DNS, zone settings and WAF rules for two domains managed with __OpenTofu__: plan on every pipeline, reviewed apply, remote state and locking in GitLab.
 - Observability with __Prometheus__ blackbox probes of every public endpoint from the edge and from inside the network, to tell a CDN or proxy outage from a backend one, and __Grafana__ alert rules on availability and TLS expiry; __Caddy__ reverse proxy with automatic TLS, HTTP/3 and hardened security headers.
@@ -226,7 +230,6 @@ tagline = """
 title = "Private AI lab"
 meta = "Personal project · local LLMs"
 tagline = """
-- Run LLMs locally with __llama.cpp__.
-- Deploy web front-ends with [Open WebUI](https://openwebui.com/) and [ComfyUI](https://www.comfy.org/) for day-to-day use.
+- Run LLMs locally with __llama.cpp__, with [Open WebUI](https://openwebui.com/) and [ComfyUI](https://www.comfy.org/) front-ends for day-to-day use.
 - Hands-on experience deploying private, on-premise AI, where data must not leave the organization.
 """
