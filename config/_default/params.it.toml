@@ -199,13 +199,14 @@ enable = true
 
 [[projects.list]]
 title = "Infrastruttura cloud self-hosted"
-meta = "Progetto personale · da oltre 15 anni, in corso"
+meta = "Progetto personale e di community · da oltre 15 anni, in corso"
 tagline = """
-- Gestione di servizi containerizzati su server Linux, affiancati da alcuni servizi gestiti, per uso personale e della community: nodi del Fediverso ([Mastodon](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/)), [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), un server Minecraft e [il sito del mio curriculum](https://gitlab.com/gabrielelucci/hugo-resume) (realizzato con [Hugo](https://gohugo.io/)).
-- Infrastruttura come codice [su Git](https://gitlab.com/gabrielelucci/cloud) con __Docker Compose__, e pipeline __GitLab CI/CD__ per validazione e deployment programmati.
-- Reverse proxy __Caddy__ con certificati TLS automatici e bilanciamento del carico.
-- Metriche con __Prometheus__, dashboard in __Grafana__, log nello stack ELK.
-- Esperienza con i principali cloud provider: OVH, DigitalOcean, Scaleway e Cloudflare.
+- Progettazione, gestione ed evoluzione di 10 progetti __Docker Compose__ (~45 container) su server Linux, [tutto in un unico repository Git](https://gitlab.com/gabrielelucci/cloud): due server [Mastodon](https://joinmastodon.org/) (uno è l'istanza community devianze.city), [GoToSocial](https://gotosocial.org/), un relay ActivityPub, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), un server Minecraft e questo curriculum.
+- Continuous delivery con __GitLab CI/CD__: ogni push viene validato, poi vengono rilasciati solo i progetti toccati, in ordine di dipendenza, su un Docker engine remoto via SSH, con roll-out condizionati agli health check e migrazioni Mastodon senza downtime. I segreti stanno cifrati nel repository (transcrypt).
+- Supply chain sempre aggiornata senza intervento manuale: ogni immagine fissata al digest, __Renovate__ che unisce in automatico gli aggiornamenti sicuri e trattiene quelli rischiosi per la revisione; oltre 800 aggiornamenti rilasciati senza supervisione.
+- DNS, impostazioni di zona e regole WAF Cloudflare di due domini gestiti con __OpenTofu__: plan a ogni pipeline, apply con revisione, stato remoto con lock su GitLab.
+- Osservabilità con probe blackbox __Prometheus__ di ogni endpoint pubblico, sia dall'edge sia dall'interno della rete, per distinguere un guasto di CDN o proxy da uno del backend, e regole di alert __Grafana__ su disponibilità e scadenza TLS; reverse proxy __Caddy__ con TLS automatico, HTTP/3 e header di sicurezza.
+- Operazioni day-2: backup PostgreSQL e restic programmati su S3 con procedura di ripristino documentata, runbook per gli upgrade di versione maggiore di PostgreSQL e difesa anti-spam alle iscrizioni su tre livelli (WAF Cloudflare, rate limiting Angie, approvazione Mastodon) per l'istanza community.
 """
 
 [[projects.list]]

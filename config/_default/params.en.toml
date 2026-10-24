@@ -212,13 +212,14 @@ enable = true
 
 [[projects.list]]
 title = "Self-hosted cloud infrastructure"
-meta = "Personal project · 15+ years, ongoing"
+meta = "Personal and community project · 15+ years, ongoing"
 tagline = """
-- Run containerized services on Linux hosts, alongside a few managed services, for personal and community use: Fediverse nodes ([Mastodon](https://joinmastodon.org/), [GoToSocial](https://gotosocial.org/)), [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), a Minecraft server and [my resume website](https://gitlab.com/gabrielelucci/hugo-resume) (built with [Hugo](https://gohugo.io/)).
-- Infrastructure as code [in Git](https://gitlab.com/gabrielelucci/cloud) with __Docker Compose__, and __GitLab CI/CD__ pipelines for validation and scheduled deployments.
-- __Caddy__ reverse proxy with automatic TLS certificates and load balancing.
-- Metrics with __Prometheus__, dashboards in __Grafana__, logs in the ELK stack.
-- Experience with major cloud providers: OVH, DigitalOcean, Scaleway and Cloudflare.
+- Design, run and evolve 10 __Docker Compose__ projects (~45 containers) on Linux hosts, [all in one Git repository](https://gitlab.com/gabrielelucci/cloud): two [Mastodon](https://joinmastodon.org/) servers (one the devianze.city community instance), [GoToSocial](https://gotosocial.org/), an ActivityPub relay, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), a Minecraft server and this résumé.
+- Continuous delivery with __GitLab CI/CD__: every push is validated, then only the projects it touched are deployed, in dependency order, to a remote Docker engine over SSH, with health-check gated roll-outs and zero-downtime Mastodon migrations. Secrets live encrypted in the repo (transcrypt).
+- Supply chain kept current hands-free: every image pinned by digest, __Renovate__ auto-merging safe updates and holding risky ones for review; 800+ dependency updates landed unattended.
+- Cloudflare DNS, zone settings and WAF rules for two domains managed with __OpenTofu__: plan on every pipeline, reviewed apply, remote state and locking in GitLab.
+- Observability with __Prometheus__ blackbox probes of every public endpoint from the edge and from inside the network, to tell a CDN or proxy outage from a backend one, and __Grafana__ alert rules on availability and TLS expiry; __Caddy__ reverse proxy with automatic TLS, HTTP/3 and hardened security headers.
+- Day-2 operations: scheduled PostgreSQL and restic backups to S3 with a documented restore procedure, a PostgreSQL major-version upgrade runbook, and a three-layer sign-up spam defence (Cloudflare WAF, Angie rate limiting, Mastodon approval) for the community instance.
 """
 
 [[projects.list]]
