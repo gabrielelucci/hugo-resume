@@ -203,7 +203,7 @@ enable = true
 title = "Infrastruttura cloud self-hosted"
 meta = "Progetto personale e di community · da oltre 15 anni, in corso"
 tagline = """
-- Gestione di 10 progetti __Docker Compose__ (~45 container) [da un unico repository Git](https://gitlab.com/gabrielelucci/cloud): due server [Mastodon](https://joinmastodon.org/), tra cui l'istanza community devianze.city, [GoToSocial](https://gotosocial.org/), un relay ActivityPub, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), Minecraft e questo curriculum.
+- Gestione di 10+ progetti __Docker Compose__ (~50 container) [da un unico repository Git](https://gitlab.com/gabrielelucci/cloud): due server [Mastodon](https://joinmastodon.org/), tra cui l'istanza community devianze.city, [GoToSocial](https://gotosocial.org/), un relay ActivityPub, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), Minecraft e questo curriculum.
 - __GitLab CI/CD__ rilascia solo ciò che ogni push ha modificato, in ordine di dipendenza, via SSH, condizionato agli health check; immagini fissate al digest e aggiornate da __Renovate__, con oltre 800 aggiornamenti unificati in automatico.
 - DNS, impostazioni di zona e regole WAF Cloudflare di due domini come codice __OpenTofu__, con plan in CI e apply dopo revisione; reverse proxy __Caddy__ con TLS automatico e HTTP/3.
 - Probe __Prometheus__ dall'edge e dall'interno della rete con regole di alert __Grafana__; backup su S3 con ripristino documentato, runbook per upgrade major di PostgreSQL, difesa anti-spam a più livelli.
