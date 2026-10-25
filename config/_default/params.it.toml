@@ -93,19 +93,17 @@ title = "DevOps / Sistemi"
 [[skills.list.items]]
 details = "Linux (Debian, Red Hat, Arch)"
 [[skills.list.items]]
-details = "Docker, Podman, Docker Compose; Kubernetes"
+details = "Docker, Podman, Compose, Kubernetes"
 [[skills.list.items]]
-details = "CI/CD e GitOps (GitLab CI, GitHub Actions, Renovate)"
+details = "CI/CD (GitLab CI, GitHub Actions, Renovate)"
 [[skills.list.items]]
-details = "IaC: OpenTofu / Terraform, Cloudflare (DNS, WAF)"
+details = "IaC: OpenTofu / Terraform, Cloudflare"
 [[skills.list.items]]
-details = "Caddy, Nginx / Angie, Apache"
+details = "Caddy, Nginx, Apache"
 [[skills.list.items]]
 details = "Prometheus, Grafana, Elasticsearch"
 [[skills.list.items]]
-details = "Operatività PostgreSQL: backup, ripristini, upgrade maggiori"
-[[skills.list.items]]
-details = "Cloud: OVH, Scaleway, DigitalOcean, storage S3"
+details = "Cloud: OVH, Scaleway, DigitalOcean"
 [[skills.list.items]]
 details = "Hosting di LLM in locale (llama.cpp)"
 
@@ -205,12 +203,10 @@ enable = true
 title = "Infrastruttura cloud self-hosted"
 meta = "Progetto personale e di community · da oltre 15 anni, in corso"
 tagline = """
-- Progettazione e gestione di 10 progetti __Docker Compose__ (~45 container) su server Linux, [tutto in un unico repository Git](https://gitlab.com/gabrielelucci/cloud): due server [Mastodon](https://joinmastodon.org/) (uno è l'istanza community devianze.city), [GoToSocial](https://gotosocial.org/), un relay ActivityPub, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), un server Minecraft e questo curriculum.
-- Continuous delivery con __GitLab CI/CD__: ogni push viene validato, poi si rilasciano solo i progetti toccati, in ordine di dipendenza, su un Docker engine remoto via SSH, con roll-out condizionati agli health check e migrazioni Mastodon senza downtime; segreti cifrati nel repository.
-- Supply chain sempre aggiornata senza intervento manuale: ogni immagine fissata al digest, __Renovate__ che unisce in automatico gli aggiornamenti sicuri e trattiene quelli rischiosi per la revisione; oltre 800 aggiornamenti rilasciati senza supervisione.
-- DNS, impostazioni di zona e regole WAF Cloudflare di due domini gestiti con __OpenTofu__: plan a ogni pipeline, apply con revisione, stato remoto con lock su GitLab.
-- Osservabilità con probe blackbox __Prometheus__ di ogni endpoint pubblico, sia dall'edge sia dall'interno della rete, per distinguere un guasto di CDN o proxy da uno del backend, e regole di alert __Grafana__ su disponibilità e scadenza TLS; reverse proxy __Caddy__ con TLS automatico, HTTP/3 e header di sicurezza.
-- Operazioni day-2: backup PostgreSQL e restic programmati su S3 con procedura di ripristino documentata, runbook per gli upgrade major di PostgreSQL e difesa anti-spam alle iscrizioni su tre livelli (WAF Cloudflare, rate limit Angie, approvazione Mastodon) per l'istanza community.
+- Gestione di 10 progetti __Docker Compose__ (~45 container) [da un unico repository Git](https://gitlab.com/gabrielelucci/cloud): due server [Mastodon](https://joinmastodon.org/), tra cui l'istanza community devianze.city, [GoToSocial](https://gotosocial.org/), un relay ActivityPub, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), Minecraft e questo curriculum.
+- __GitLab CI/CD__ rilascia solo ciò che ogni push ha modificato, in ordine di dipendenza, via SSH, condizionato agli health check; immagini fissate al digest e aggiornate da __Renovate__, con oltre 800 aggiornamenti unificati in automatico.
+- DNS, impostazioni di zona e regole WAF Cloudflare di due domini come codice __OpenTofu__, con plan in CI e apply dopo revisione; reverse proxy __Caddy__ con TLS automatico e HTTP/3.
+- Probe __Prometheus__ dall'edge e dall'interno della rete con regole di alert __Grafana__; backup su S3 con ripristino documentato, runbook per upgrade major di PostgreSQL, difesa anti-spam a più livelli.
 """
 
 [[projects.list]]
