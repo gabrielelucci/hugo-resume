@@ -219,7 +219,7 @@ tagline = """
 - Run 10+ __Docker Compose__ projects (~50 containers) [from one Git repository](https://gitlab.com/gabrielelucci/cloud): two [Mastodon](https://joinmastodon.org/) servers, one the devianze.city community instance, [GoToSocial](https://gotosocial.org/), an ActivityPub relay, [Nextcloud](https://nextcloud.com), [Grocy](https://grocy.info/), Minecraft and this résumé.
 - __GitLab CI/CD__ deploys only what each push changed, in dependency order, over SSH, gated on health checks; ~25 scheduled pipelines a day: hourly __Renovate__ runs merge digest-pinned image updates unattended, plus a full redeploy.
 - Cloudflare DNS, zone settings and WAF rules for two domains as __OpenTofu__ code, planned in CI and applied after review; __Caddy__ reverse proxy with automatic TLS and HTTP/3.
-- __Prometheus__ probes from the edge and inside the network with __Grafana__ alert rules; S3 backups with a documented restore, PostgreSQL major-upgrade runbook, layered sign-up spam defence.
+- __Prometheus__ probes from the edge and inside the network with __Grafana__ alert rules; S3 backups with a documented and tested restore procedure, layered sign-up spam defence.
 """
 
 [[projects.list]]
