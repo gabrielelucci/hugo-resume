@@ -1,0 +1,57 @@
+# Prints the resume to one-page A4 PDFs (English and Italian) and keeps them as
+# job artifacts. See "PDF from CI" in README.md.
+#
+# The project is public, so there are two jobs:
+#   - resume-pdf: with the phone number from the HUGO_RESUME_PHONE CI/CD variable
+#     (protected + masked), artifact downloadable by project members only;
+#   - resume-pdf-public: without it, artifact downloadable by anyone.
+
+workflow:
+  rules:
+    # Branch pipelines only: no duplicate merge-request pipelines.
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: never
+    - when: always
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  GIT_SUBMODULE_FORCE_HTTPS: "true"
+  # The theme submodule uses a git@github.com: URL; the repo is public, so
+  # rewrite it to anonymous HTTPS.
+  GIT_CONFIG_COUNT: "1"
+  GIT_CONFIG_KEY_0: "url.https://github.com/.insteadOf"
+  GIT_CONFIG_VALUE_0: "git@github.com:"
+
+.print-pdf:
+  image: ghcr.io/hugomods/hugo:dart-sass-node-git-0.165.0@sha256:63fdee05933f0928f0c720f7bef9f36c34b751f3091535b1a84b51633f43bd59
+  before_script:
+    - apk add --no-cache chromium ttf-freefont poppler-utils
+    - npm ci --prefix themes/hugo-devresume-theme
+
+resume-pdf:
+  extends: .print-pdf
+  rules:
+    # HUGO_RESUME_PHONE is a protected variable: it only exists on protected refs.
+    - if: $CI_COMMIT_REF_PROTECTED == "true"
+  script:
+    - test -n "${HUGO_RESUME_PHONE:-}" || { echo "HUGO_RESUME_PHONE is not set (Settings > CI/CD > Variables)" >&2; exit 1; }
+    - sh scripts/print-pdf.sh pdf
+  artifacts:
+    name: "resume-$CI_COMMIT_SHORT_SHA"
+    access: developer
+    paths:
+      - pdf/
+    expire_in: 1 year
+
+resume-pdf-public:
+  extends: .print-pdf
+  script:
+    # Project variables override YAML `variables:`, so drop the phone here.
+    - unset HUGO_RESUME_PHONE
+    - sh scripts/print-pdf.sh pdf
+  artifacts:
+    name: "resume-public-$CI_COMMIT_SHORT_SHA"
+    access: all
+    paths:
+      - pdf/
+    expire_in: 1 year

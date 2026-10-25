@@ -11,3 +11,6 @@ hugo.linux
 
 node_modules
 .idea
+
+# PDFs from scripts/print-pdf.sh
+/pdf/

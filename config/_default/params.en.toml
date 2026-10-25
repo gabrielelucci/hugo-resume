@@ -21,7 +21,7 @@ url = "mailto:gabriele@lucci.xyz"
 label = "Email"
 text = "gabriele@lucci.xyz"
 [[contact.list]]
-# Local builds only, for printing: never commit the number.
+# Local and CI builds only, for printing: never commit the number.
 icon = "fas fa-phone"
 url = "tel:"
 label = "Phone"
