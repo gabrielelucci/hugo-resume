@@ -1,0 +1,35 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard"
+  ],
+  "enabledManagers": [
+    "dockerfile",
+    "git-submodules"
+  ],
+  "separateMinorPatch": true,
+  "dockerfile": {
+    "pinDigests": true
+  },
+  "packageRules": [
+    {
+      "description": "hugomods tags put the variant first and the version last (exts-non-root-0.154.5); docker versioning cannot read them.",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/hugomods/hugo"],
+      "versioning": "regex:^(?<compatibility>[a-z-]+?)-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
+    },
+    {
+      "description": "Images: digests, patches and minors automerge; majors get an MR. Hugo is 0.x, so a 0.155 minor can change template behaviour; the site build on deploy is the check.",
+      "matchManagers": ["dockerfile"],
+      "matchUpdateTypes": ["digest", "pinDigest", "patch", "minor"],
+      "automerge": true
+    },
+    {
+      "description": "The theme submodule is this owner's own repository; follow it.",
+      "matchManagers": ["git-submodules"],
+      "automerge": true
+    }
+  ],
+  "prHourlyLimit": 0
+}
