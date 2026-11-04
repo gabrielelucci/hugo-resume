@@ -1,5 +1,5 @@
 description = "Sviluppatore software backend con oltre 8 anni di esperienza in Python, Django e Node.js: applicazioni web, API REST e deployment cloud-native containerizzati, e gestione di infrastruttura di produzione come codice."
-keywords = ["sviluppatore backend", "sviluppatore software", "sviluppatore web", "python", "django", "django cms", "api rest", "postgresql", "javascript", "nodejs", "docker", "linux", "golang", "devops", "infrastructure as code", "gitlab ci", "opentofu", "terraform", "cloudflare"]
+keywords = ["sviluppatore backend", "sviluppatore software", "sviluppatore web", "python", "django", "django cms", "api rest", "postgresql", "javascript", "nodejs", "docker", "linux", "golang", "devops", "infrastructure as code", "gitlab ci", "opentofu", "terraform", "cloudflare", "agentic coding", "claude code", "github copilot", "mcp"]
 
 [profile]
 enable = true
@@ -87,6 +87,8 @@ title = "Strumenti"
 details = "Git (GitLab, GitHub, Bitbucket)"
 [[skills.list.items]]
 details = "Tooling Python (mypy, ruff, uv)"
+[[skills.list.items]]
+details = "Agentic coding: Claude Code, GitHub Copilot, MCP"
 
 [[skills.list]]
 title = "DevOps / Sistemi"
@@ -135,7 +137,7 @@ enable = true
 text = """
 Sviluppatore software backend con oltre 8 anni di esperienza professionale in __Python / Django__ e __JavaScript / Node.js__, specializzato nello sviluppo web cloud-native: modellazione dati, API REST, job in background, pipeline ETL e deployment containerizzati.
 
-A mio agio su tutto lo stack e su __Linux__, che uso da quando ero bambino e su cui da oltre 15 anni gestisco la mia infrastruttura di produzione, oggi tutta come codice.
+A mio agio su tutto lo stack e su __Linux__, che uso da quando ero bambino e su cui da oltre 15 anni gestisco la mia infrastruttura di produzione, oggi tutta come codice. Gli agenti di coding come __Claude Code__ e __GitHub Copilot__ fanno parte del mio flusso di lavoro quotidiano, collegati a strumenti reali tramite server MCP.
 
 Disponibile per ruoli di sviluppo backend, web e DevOps / platform, come dipendente o freelance, da remoto o a Roma.
 """
@@ -210,9 +212,10 @@ tagline = """
 """
 
 [[projects.list]]
-title = "Laboratorio AI privato"
-meta = "Progetto personale · LLM in locale"
+title = "Laboratorio AI privato e agentic coding"
+meta = "Progetto personale · LLM in locale, agenti di coding"
 tagline = """
+- Uso quotidiano di __Claude Code__ e __GitHub Copilot__ sul codice backend e sul repository infrastructure-as-code, con server MCP che collegano gli agenti ai servizi che gestisco.
 - Esecuzione di LLM in locale con __llama.cpp__, con le interfacce web [Open WebUI](https://openwebui.com/) e [ComfyUI](https://www.comfy.org/) per l'uso quotidiano.
 - Esperienza pratica nel deployment di AI privata on-premise, utile laddove i dati non devono lasciare l'organizzazione.
 """

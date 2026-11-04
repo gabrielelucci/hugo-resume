@@ -1,5 +1,5 @@
 description = "Backend software developer with 8+ years of experience in Python, Django and Node.js, building web applications, REST APIs and containerized, cloud-native deployments, and running production infrastructure as code."
-keywords = ["backend developer", "software developer", "web developer", "python", "django", "django cms", "rest api", "postgresql", "javascript", "nodejs", "docker", "linux", "golang", "devops", "infrastructure as code", "gitlab ci", "opentofu", "terraform", "cloudflare"]
+keywords = ["backend developer", "software developer", "web developer", "python", "django", "django cms", "rest api", "postgresql", "javascript", "nodejs", "docker", "linux", "golang", "devops", "infrastructure as code", "gitlab ci", "opentofu", "terraform", "cloudflare", "agentic coding", "claude code", "github copilot", "mcp"]
 
 [profile]
 enable = true
@@ -87,6 +87,8 @@ title = "Tooling"
 details = "Git (GitLab, GitHub, Bitbucket)"
 [[skills.list.items]]
 details = "Python tooling (mypy, ruff, uv)"
+[[skills.list.items]]
+details = "Agentic coding: Claude Code, GitHub Copilot, MCP"
 
 [[skills.list]]
 title = "DevOps / SysAdmin"
@@ -148,7 +150,7 @@ enable = true
 text = """
 Backend software developer with 8+ years of professional experience in __Python / Django__ and __JavaScript / Node.js__, with a track record of taking cloud-native web applications from the drawing board to production: data models, REST APIs, background jobs, ETL pipelines and containerized deployments.
 
-Comfortable across the stack and on __Linux__ systems, which I've used since I was a kid and where I've run my own production infrastructure for 15+ years, today fully as code.
+Comfortable across the stack and on __Linux__ systems, which I've used since I was a kid and where I've run my own production infrastructure for 15+ years, today fully as code. AI coding agents such as __Claude Code__ and __GitHub Copilot__ are part of my daily workflow, wired to real tools through MCP servers.
 
 Open to backend, web development and DevOps / platform roles, as an employee or freelance, remote or Rome-based.
 """
@@ -223,9 +225,10 @@ tagline = """
 """
 
 [[projects.list]]
-title = "Private AI lab"
-meta = "Personal project · local LLMs"
+title = "Private AI lab & agentic coding"
+meta = "Personal project · local LLMs, coding agents"
 tagline = """
+- Daily driver: __Claude Code__ and __GitHub Copilot__ on backend code and on the infrastructure-as-code repo, with MCP servers connecting the agents to the services I run.
 - Run LLMs locally with __llama.cpp__, with [Open WebUI](https://openwebui.com/) and [ComfyUI](https://www.comfy.org/) front-ends for day-to-day use.
 - Hands-on experience deploying private, on-premise AI, where data must not leave the organization.
 """
