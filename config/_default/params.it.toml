@@ -149,7 +149,7 @@ start = "2025-06"
 end = "2026-02"
 company = "I Mille"
 details = """
-- Sviluppo di siti web e soluzioni CMS (Content Management System) su misura con __Django__ e __Django CMS__.
+- Sviluppo di siti web e soluzioni CMS (Content Management System) su misura con __Django__, __Django CMS__ e WordPress.
 - Progetti per clienti enterprise, tra cui Barilla, Maire Group, Cotral e Locauto.
 """
 
@@ -188,11 +188,11 @@ details = """
 
 [[experience.list]]
 title = "Sviluppatore Full-Stack"
-start = "2016-09"
+start = "2016-07"
 end = "2017-07"
 company = "Anansi Team"
 details = """
-- Sviluppo di "APA Cloud", suite server-side per raccogliere, archiviare e visualizzare dati di sensori per la qualità dell'aria (IoT).
+- Presa in carico e guida dello sviluppo di "APA Cloud", suite server-side per raccogliere, archiviare e visualizzare dati di sensori per la qualità dell'aria (IoT).
 - Backend in __Node.js__ (LoopBack 3, Sails.js); frontend e visualizzazione dati in __AngularJS__.
 """
 

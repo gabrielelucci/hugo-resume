@@ -162,7 +162,7 @@ start = "2025-06"
 end = "2026-02"
 company = "I Mille"
 details = """
-- Built custom-tailored websites and Content Management System (CMS) solutions with __Django__ and __Django CMS__.
+- Built custom-tailored websites and Content Management System (CMS) solutions with __Django__, __Django CMS__ and WordPress.
 - Delivered projects for enterprise clients, including Barilla, Maire Group, Cotral and Locauto.
 """
 
@@ -201,11 +201,11 @@ details = """
 
 [[experience.list]]
 title = "Full-Stack Developer"
-start = "2016-09"
+start = "2016-07"
 end = "2017-07"
 company = "Anansi Team"
 details = """
-- Led the development of "APA Cloud", a server-side suite to gather, store and visualize air-quality sensor data (IoT).
+- Took over "APA Cloud" and led its development: a server-side suite to gather, store and visualize air-quality sensor data (IoT).
 - Backend in __Node.js__ (LoopBack 3, Sails.js); frontend and data visualization in __AngularJS__.
 """
 
